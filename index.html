@@ -7,7 +7,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#f5ecd7">
 <!--
-  The Clearing — Jasmine's personal app, v2.3.37 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home.
+  The Clearing — Jasmine's personal app, v2.3.38 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -119,6 +119,19 @@ body.arranging #icon-bar{display:none}
 .dopt{background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:8px 14px; font:inherit; color:var(--ink); cursor:pointer; margin:2px 4px 2px 0}
 .dopt.on{background:var(--acc); color:var(--ink-deep); border-color:transparent; font-weight:700}
 .diary-note{margin:2px 0 8px}
+/* Cycle tracker calendar (v2.3.38): a plain month grid — no moon phases,
+   no glyphs, just the days. Logged period days are filled Plum; predicted
+   period days are an outline only; today gets a gold ring. */
+.cyc-cal{display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-top:10px}
+.cyc-dow{text-align:center; font-size:11px; color:var(--muted); font-weight:700; padding:2px 0}
+.cyc-day{aspect-ratio:1; border-radius:8px; border:1px solid var(--line); background:var(--panel2); color:var(--ink); font:inherit; font-size:14px; cursor:pointer; padding:0}
+.cyc-day.blank{border-color:transparent; background:transparent; cursor:default}
+.cyc-day.today{border:2px solid #b08d57; font-weight:700}
+.cyc-day.period{background:#6b4f70; border-color:#6b4f70; color:#f7efdd; font-weight:700}
+.cyc-day.predicted{border:2px dashed #6b4f70}
+.cyc-day.period.today{border-color:#b08d57}
+.cyc-dayline{font-size:20px; font-weight:700; color:var(--ink-deep)}
+.cyc-phase{font-family:'Palatino','Palatino Linotype','Book Antiqua','Iowan Old Style',Georgia,serif; font-size:22px; color:var(--ink-deep); margin:2px 0 6px}
 
 .item.fav{border-left:4px solid #b08d57}
 .fav-mark{display:inline-block; font-size:12px; font-weight:700; color:#6b4a2f; background:#f3e2b8; border:1px solid #b08d57; border-radius:999px; padding:1px 8px; margin-left:6px}
@@ -390,7 +403,7 @@ const PALETTE = [
    old hash rotation is only a last-resort fallback. Palette index:
    Bark 0, Cream 1, Pebble 2, Moss 3, Brick 4, Plum 5, Pumpkin 6, Teal 7.
    v2.3.28: Weather is Teal (7), not Bark — she remembered Teal. */
-const FIXED_COLORS = {moonstars:1, weather:7, astrology:1, divination:5, cabinet:2, calendar:0, diary:2, focus:4, mantra:6, land:3};
+const FIXED_COLORS = {moonstars:1, weather:7, astrology:1, divination:5, cabinet:2, calendar:0, diary:2, focus:4, mantra:6, land:3, tonight:2, cycle:2};
 /* v2.3.27: Jasmine's fixed tile order, as she arranged it herself. */
 const FIXED_ORDER = ["focus","weather","moonstars","calendar","divination","astrology","diary","mantra","cabinet","land"];
 /* The order the app used before v2.3.27. The migration replaces a saved
@@ -813,6 +826,7 @@ function defaultState(){
     tileOrder:null,
     events:EVENTS_SEED.map(e=>({id:uid(),...e})),
     diary:{},
+    cycle:{periods:[],symptoms:{},customSymptoms:[]},
     tarotLog:[],
     runeLog:[],
     myths:[],
@@ -936,6 +950,8 @@ function load(){
       const d = defaultState();
       state = Object.assign(d, data);
       if(!Array.isArray(state.events)) state.events = d.events;
+      if(!state.cycle || typeof state.cycle !== "object") state.cycle = d.cycle;
+      normalizeCycle();
       migrateTileColors();
       mergeSeedDecks();
       if(mergeSeedCabinet()) saveNow(); // persist new seed items at once
@@ -1131,7 +1147,8 @@ const VIEW_META = {
   decks:{name:"Deck Collection",icon:"cards"},
   cabinet:{name:"Witch's cabinet",icon:"sprig"},
   calendar:{name:"Calendar",icon:"phases"},
-  diary:{name:"Diary",icon:"book"},
+  tonight:{name:"Tonight",icon:"book"},
+  cycle:{name:"Cycle",icon:"ring"},
   focus:{name:"Focus",icon:"ring"},
   mantra:{name:"Mantra",icon:"lotus"},
   ravens:{name:"Raven Log",icon:"feather"},
@@ -1147,12 +1164,13 @@ const FOLDERS = {
   moonstars:{name:"Moon & Stars",icon:"sunmoon",tabs:["moon","sky"]},
   land:{name:"Land",icon:"mountain",tabs:["map","compass","ravens","field"]},
   astrology:{name:"Astrology",icon:"spiral",tabs:["saju","tarot","charts","numerology"]},
+  diary:{name:"Diary",icon:"book",tabs:["tonight","cycle"]},
   divination:{name:"Divination & Guides",icon:"crystal",tabs:["tarot","runes","decks","myth"]}
 };
 function homeName(t){ return t.folder ? FOLDERS[t.id].name : VIEW_META[t.id].name; }
 function homeIcon(t){ const k = t.folder ? FOLDERS[t.id].icon : VIEW_META[t.id].icon; return ICONS[k] || ICONS.spiral; }
 /* Home grid: 10 tiles. Folder members (moon, sky, saju, tarot, charts,
-   runes, myth, decks, map, compass, ravens, field) are not tiles any more — they
+   runes, myth, decks, map, compass, ravens, field, tonight, cycle) are not tiles any more — they
    live inside their folders, and their views still exist unchanged. */
 const TILES = [
   {id:"moonstars",folder:true, size:"small", tall:true, titleOnly:true, sub:()=>"Moon · Sky"},
@@ -1161,7 +1179,7 @@ const TILES = [
   {id:"divination",folder:true,  size:"half",   sub:()=>"Tarot · Runes · Deck Collection · Mythology"},
   {id:"cabinet",  size:"small",  sub:()=>state.cabinet.length+" things in the cabinet"},
   {id:"calendar", size:"small", tall:true, sub:()=>{ const t=todayStr(); const up=state.events.filter(e=>e.date>=t).sort((a,b)=>a.date<b.date?-1:1); if(!up.length) return "Nothing coming up"; const e=up[0]; const title=e.title.length>24? e.title.slice(0,24)+"…" : e.title; return shortDate(e.date)+" · "+title; }},
-  {id:"diary",    size:"small",  titleOnly:true, sub:()=>{ const keys=Object.keys(state.diary).sort(); if(!keys.length) return "This evening's check-in"; const last=keys[keys.length-1]; return last===todayStr()? "Tonight's entry written" : "Last entry "+shortDate(last); }},
+  {id:"diary", folder:true, size:"small",  titleOnly:true, sub:()=>{ const keys=Object.keys(state.diary).sort(); if(!keys.length) return "This evening's check-in"; const last=keys[keys.length-1]; return last===todayStr()? "Tonight's entry written" : "Last entry "+shortDate(last); }},
   {id:"focus",    size:"small",  titleOnly:true, sub:()=>{ const n=nextFocus(); return n? "Next: "+n.text : "Nothing on the list"; }},
   {id:"mantra",   size:"small",  titleOnly:true, sub:()=>state.mantras.length? (state.mantras[0].text.length>30? state.mantras[0].text.slice(0,30)+"…" : state.mantras[0].text) : "Yours to fill"},
   {id:"land",     folder:true,   size:"medium", sub:()=>"707 Map · Compass · Raven Log · Field Guide"}
@@ -1847,7 +1865,10 @@ VIEW_RENDER.calendar = function(el){
 const DIARY_WEATHER = ["Sunny","Sun & cloud","Cloudy","Drizzle","Rain","Windy","Snow","Storm","Fog","A bit of everything"];
 const DIARY_MOOD = ["Very low","Low","Okay","Good","Bright"];
 const DIARY_BODY = ["Rough","Low","Okay","Good","Strong"];
-VIEW_RENDER.diary = function(el){
+/* v2.3.38: the Diary is a folder now (tabs Tonight, Cycle), so the
+   check-in view id is "tonight". Its heading stays "Diary"; the
+   tab bar above it says Tonight. */
+VIEW_RENDER.tonight = function(el){
   const t = todayStr();
   const cur = state.diary[t] || {};
   /* Migration (v2.3.35): old entries hold free text in weather/mood/body.
@@ -1887,7 +1908,7 @@ VIEW_RENDER.diary = function(el){
       prompt: el.querySelector("#d-prompt").value.trim()
     };
   }
-  el.innerHTML = viewHead(viewMeta("diary"), "The evening check-in. Every part is optional — even one tap counts as a full entry.")
+  el.innerHTML = viewHead({name:"Diary",icon:"book"}, "The evening check-in. Every part is optional — even one tap counts as a full entry.")
     + "<div class='panel'><h3>Tonight — "+fmtDate(t)+"</h3>"
     + "<label>Weather today — did you get out to the yard, see the birds?</label>" + diaryOpts("weather", DIARY_WEATHER, w)
     + "<input type='text' class='diary-note' id='d-weather-note' placeholder='A note on the weather, if you like' value=\""+esc(w.note)+"\">"
@@ -1912,7 +1933,7 @@ VIEW_RENDER.diary = function(el){
     ].filter(Boolean).join("");
     return "<div class='item'><div class='meta'>"+fmtDate(k)+"</div>"+(lines || "<div class='small'>(empty entry)</div>")+"<div><button class='btn small danger' data-del-d='"+k+"'>Delete</button></div></div>";
   }).join("") : "<p class='small'>No entries yet. Tonight will be the first.</p>";
-  list.querySelectorAll("[data-del-d]").forEach(b=>b.addEventListener("click",()=>{ delete state.diary[b.dataset.delD]; saveNow(); renderView("diary"); renderHome(); }));
+  list.querySelectorAll("[data-del-d]").forEach(b=>b.addEventListener("click",()=>{ delete state.diary[b.dataset.delD]; saveNow(); renderView("tonight"); renderHome(); }));
   el.querySelectorAll(".dopt").forEach(b=>b.addEventListener("click",()=>{
     const was = b.classList.contains("on");
     el.querySelectorAll(".dopt[data-q='"+b.dataset.q+"']").forEach(x=>x.classList.remove("on"));
@@ -1924,7 +1945,209 @@ VIEW_RENDER.diary = function(el){
   el.querySelector("#d-save").addEventListener("click",()=>{
     state.diary[t] = diaryCollect();
     saveNow(); el.querySelector("#d-saved").textContent = "Saved.";
-    renderView("diary"); renderHome();
+    renderView("tonight"); renderHome();
+  });
+};
+
+/* ---- Cycle tracker (v2.3.38) ---- */
+/* A menstrual cycle tracker, as the Diary's second tab. Jasmine's asks
+   (Nov 27): log period dates, predict the next period from her own
+   history, log PMS symptoms (hers start about a week before bleeding),
+   and show what stage she is in. What she does NOT want (Stardust's
+   faults): facts about other phases shown on the wrong day — so the
+   status area shows ONLY today's phase and one line about it — and a
+   calendar cluttered with moon phases — so this calendar has none.
+   Data lives in one new saved-doc key, `cycle`:
+   {periods:[{start:"YYYY-MM-DD",end:"YYYY-MM-DD"}, ...] (sorted by
+   start), symptoms:{"YYYY-MM-DD":[symptom, ...]}, customSymptoms:[...]}.
+   The sync bridge pushes the doc verbatim, so cycle data syncs exactly
+   like her diary does. */
+const CYCLE_SYMPTOMS = ["Cramps","Bloating","Headache","Tired","Tender breasts","Breakouts","Low mood","Irritable","Cravings","Trouble sleeping"];
+/* One plain line per phase — and only today's line is ever shown. */
+const CYCLE_PHASE_LINES = {
+  menstrual:"You're bleeding — rest when you can, and be gentle with yourself.",
+  follicular:"Your body is building back up after your period — energy often starts to return.",
+  ovulation:"Ovulation is around today — the middle of your cycle.",
+  luteal:"You're in the days before your period — this is when PMS tends to show up."
+};
+function cycParse(s){ const p = String(s).split("-"); return {y:+p[0], m:+p[1], d:+p[2]}; }
+function cycStr(y, m, d){ return y+"-"+String(m).padStart(2,"0")+"-"+String(d).padStart(2,"0"); }
+function cycDayNum(s){ const p = cycParse(s); return Date.UTC(p.y, p.m-1, p.d)/86400000; }
+function cycAdd(s, n){ const d = new Date(cycDayNum(s)*86400000 + n*86400000); return cycStr(d.getUTCFullYear(), d.getUTCMonth()+1, d.getUTCDate()); }
+function cycDiff(a, b){ return Math.round(cycDayNum(b) - cycDayNum(a)); }
+function shiftMonth(cm, d){ let y = cm.y, m = cm.m + d; while(m < 1){ m += 12; y--; } while(m > 12){ m -= 12; y++; } return {y:y, m:m}; }
+function normalizeCycle(){
+  if(!state.cycle || typeof state.cycle !== "object") state.cycle = {periods:[],symptoms:{},customSymptoms:[]};
+  const c = state.cycle;
+  if(!Array.isArray(c.periods)) c.periods = [];
+  if(!c.symptoms || typeof c.symptoms !== "object") c.symptoms = {};
+  if(!Array.isArray(c.customSymptoms)) c.customSymptoms = [];
+  c.periods = c.periods.filter(p=>p && typeof p.start === "string" && typeof p.end === "string" && /^\d{4}-\d{2}-\d{2}$/.test(p.start) && /^\d{4}-\d{2}-\d{2}$/.test(p.end) && p.start <= p.end)
+    .sort((a,b)=>a.start<b.start?-1:1);
+  /* merge overlapping or touching ranges into one period */
+  const merged = [];
+  c.periods.forEach(p=>{
+    const last = merged[merged.length-1];
+    if(last && cycDiff(last.end, p.start) <= 1){ if(p.end > last.end) last.end = p.end; }
+    else merged.push({start:p.start, end:p.end});
+  });
+  c.periods = merged;
+  c.customSymptoms = c.customSymptoms.filter(s=>typeof s === "string" && s.trim()).map(s=>s.trim());
+  Object.keys(c.symptoms).forEach(k=>{ if(!Array.isArray(c.symptoms[k])) delete c.symptoms[k]; else c.symptoms[k] = c.symptoms[k].filter(s=>typeof s === "string"); });
+}
+function cycPeriodDays(){ /* every logged period day, as a Set of date strings */
+  const out = new Set();
+  (state.cycle.periods||[]).forEach(p=>{ for(let d = p.start; d <= p.end; d = cycAdd(d, 1)) out.add(d); });
+  return out;
+}
+/* Cycle stats as of a date: only periods that have started count. A
+   "logged cycle" is one start-to-start interval; the average length uses
+   the last 3 intervals. With no interval there is no prediction. */
+function cycStats(t){
+  normalizeCycle();
+  const ps = state.cycle.periods.filter(p=>p.start <= t);
+  const starts = ps.map(p=>p.start);
+  const intervals = [];
+  for(let i=1;i<starts.length;i++) intervals.push(cycDiff(starts[i-1], starts[i]));
+  const recent = intervals.slice(-3);
+  const avgLen = recent.length ? Math.round(recent.reduce((a,b)=>a+b,0)/recent.length) : null;
+  const periodLens = ps.map(p=>cycDiff(p.start, p.end)+1);
+  const avgPeriodLen = periodLens.length ? Math.max(1, Math.round(periodLens.reduce((a,b)=>a+b,0)/periodLens.length)) : 4;
+  return {periods:ps, intervals:intervals, avgLen:avgLen, avgPeriodLen:avgPeriodLen, last:ps.length?ps[ps.length-1]:null};
+}
+/* Where she is today: day number, phase, and the one line for that phase.
+   Returns null when there is nothing to count from (no period logged yet,
+   or every logged period starts in the future). Ovulation is the standard
+   approximation: predicted next period start minus 14 days. */
+function cycStatus(t){
+  const st = cycStats(t);
+  if(!st.last) return null;
+  const cur = st.last;
+  const dayN = cycDiff(cur.start, t) + 1;
+  const days = cycPeriodDays();
+  let phase, predictedStart = null, rough = false;
+  if(st.intervals.length){
+    predictedStart = cycAdd(cur.start, st.avgLen);
+    rough = st.intervals.length === 1;
+  }
+  if(days.has(t)) phase = "menstrual";
+  else if(predictedStart){
+    const ov = cycAdd(predictedStart, -14);
+    if(t < ov) phase = "follicular";
+    else if(t === ov) phase = "ovulation";
+    else phase = "luteal";
+  } else {
+    phase = dayN <= st.avgPeriodLen ? "menstrual" : "follicular"; // one period only, no prediction yet: bleeding days, then follicular
+  }
+  return {dayN:dayN, phase:phase, line:CYCLE_PHASE_LINES[phase], predictedStart:predictedStart, rough:rough, avgPeriodLen:st.avgPeriodLen, intervals:st.intervals.length};
+}
+/* Toggle one day as a period day: inside a range it is removed (shrinking
+   or splitting the range); outside, it is added and merged with any
+   neighbouring range. Saves at once, like the diary buttons. */
+function cycToggleDay(d){
+  normalizeCycle();
+  const ps = state.cycle.periods;
+  for(let i=0;i<ps.length;i++){
+    const p = ps[i];
+    if(d >= p.start && d <= p.end){
+      if(p.start === p.end){ ps.splice(i,1); }
+      else if(d === p.start){ p.start = cycAdd(d,1); }
+      else if(d === p.end){ p.end = cycAdd(d,-1); }
+      else { ps.splice(i,1,{start:p.start,end:cycAdd(d,-1)},{start:cycAdd(d,1),end:p.end}); }
+      normalizeCycle(); saveNow(); return;
+    }
+  }
+  ps.push({start:d,end:d});
+  normalizeCycle(); saveNow();
+}
+let cycleMonth = null; // memory only — which month the calendar is showing; defaults to this month
+VIEW_RENDER.cycle = function(el){
+  normalizeCycle();
+  const t = todayStr();
+  const st = cycStatus(t);
+  const days = cycPeriodDays();
+  const cm = cycleMonth || (function(){ const p = cycParse(t); return {y:p.y, m:p.m}; })();
+  const monthName = ["January","February","March","April","May","June","July","August","September","October","November","December"][cm.m-1];
+  /* --- where you are today: only today's phase, only its one line --- */
+  let statusHtml;
+  if(st){
+    statusHtml = "<div class='panel' id='cyc-status'><h3>Today — "+fmtDate(t)+"</h3>"
+      + "<div class='cyc-dayline'>Day "+st.dayN+" of your cycle</div>"
+      + "<div class='cyc-phase'>"+st.phase.charAt(0).toUpperCase()+st.phase.slice(1)+"</div>"
+      + "<p>"+st.line+"</p></div>";
+  } else {
+    statusHtml = "<div class='panel' id='cyc-status'><h3>Today — "+fmtDate(t)+"</h3>"
+      + "<p>Log your first period on the calendar below, and this will show what day of your cycle you're on.</p></div>";
+  }
+  /* --- prediction: from her own dates only, never invented --- */
+  let predHtml;
+  if(st && st.predictedStart){
+    const late = t >= st.predictedStart && !days.has(t);
+    predHtml = "<div class='panel'><h3>Next period</h3>"
+      + "<p><b>Around "+fmtDate(st.predictedStart)+"</b>"+(st.rough ? " — based on one cycle so far, so this is rough." : ".")+"</p>"
+      + (late ? "<p class='small'>It was expected around then and hasn't been logged yet — tap the day on the calendar when it starts.</p>" : "")
+      + "<p class='small'>An estimate from your own dates — it shifts as you log more.</p></div>";
+  } else if(st){
+    predHtml = "<div class='panel'><h3>Next period</h3><p>One period logged so far — once you log the next one, a prediction will appear here, estimated from your own dates.</p></div>";
+  } else {
+    predHtml = "<div class='panel'><h3>Next period</h3><p>No prediction yet — log a period below and the next one will be estimated from your own dates.</p>"
+      + "<p class='small'>To seed your history, tap the first day of a past period on the calendar, then the days after it.</p></div>";
+  }
+  /* --- calendar: a plain month grid, no moon phases anywhere --- */
+  const firstDow = (new Date(Date.UTC(cm.y, cm.m-1, 1)).getUTCDay() + 6) % 7; // Monday first
+  const daysInMonth = new Date(Date.UTC(cm.y, cm.m, 0)).getUTCDate();
+  const predDays = new Set();
+  if(st && st.predictedStart){ for(let i=0;i<st.avgPeriodLen;i++) predDays.add(cycAdd(st.predictedStart, i)); }
+  let cells = "";
+  ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"].forEach(d=>{ cells += "<div class='cyc-dow'>"+d+"</div>"; });
+  for(let i=0;i<firstDow;i++) cells += "<div class='cyc-day blank'></div>";
+  for(let d=1; d<=daysInMonth; d++){
+    const ds = cycStr(cm.y, cm.m, d);
+    const cls = ["cyc-day"];
+    if(ds === t) cls.push("today");
+    if(days.has(ds)) cls.push("period");
+    else if(predDays.has(ds)) cls.push("predicted");
+    cells += "<button type='button' class='"+cls.join(" ")+"' data-cyc-day='"+ds+"'>"+d+"</button>";
+  }
+  const todayLogged = days.has(t);
+  const calHtml = "<div class='panel'><h3>"+monthName+" "+cm.y+"</h3>"
+    + "<div class='row'><button class='btn ghost small' id='cyc-prev'>‹ Prev</button><button class='btn ghost small' id='cyc-next'>Next ›</button>"
+    + "<button class='btn small' id='cyc-today'"+(todayLogged?" disabled":"")+">"+(todayLogged?"Today is logged":"Period started today")+"</button></div>"
+    + "<div class='cyc-cal'>"+cells+"</div>"
+    + "<p class='small'>Tap a day to mark it as a period day — tap again to take it off. Filled days are logged; outlined days are the predicted next period.</p></div>";
+  /* --- PMS symptoms for today --- */
+  const c = state.cycle;
+  const allSymptoms = CYCLE_SYMPTOMS.concat(c.customSymptoms.filter(s=>CYCLE_SYMPTOMS.indexOf(s)===-1));
+  const todaySym = c.symptoms[t] || [];
+  const symHtml = "<div class='panel'><h3>PMS symptoms — today</h3>"
+    + "<p class='small'>Tap what you're feeling today. Yours often start about a week before bleeding — logging them here helps the pattern show itself.</p>"
+    + "<div class='dopt-wrap'>" + allSymptoms.map(s=>"<button type='button' class='dopt"+(todaySym.indexOf(s)!==-1?" on":"")+"' data-sym='"+esc(s)+"'>"+esc(s)+"</button>").join("") + "</div>"
+    + "<div class='row'><input type='text' id='cyc-sym-new' placeholder='Add your own symptom' style='flex:1;min-width:0;width:auto'><button class='btn' id='cyc-sym-add'>Add</button></div>"
+    + "<p class='small'>"+(todaySym.length ? "Logged today: "+esc(todaySym.join(", ")) : "Nothing logged today yet.")+"</p></div>";
+  el.innerHTML = viewHead(viewMeta("cycle"), "Your cycle, from your own dates — nothing here is guessed.")
+    + statusHtml + predHtml + calHtml + symHtml;
+  el.querySelector("#cyc-prev").addEventListener("click",()=>{ cycleMonth = shiftMonth(cm, -1); renderView("cycle"); });
+  el.querySelector("#cyc-next").addEventListener("click",()=>{ cycleMonth = shiftMonth(cm, 1); renderView("cycle"); });
+  const tb = el.querySelector("#cyc-today");
+  if(!todayLogged) tb.addEventListener("click",()=>{ cycToggleDay(t); renderView("cycle"); renderHome(); });
+  el.querySelectorAll("[data-cyc-day]").forEach(b=>b.addEventListener("click",()=>{ cycToggleDay(b.dataset.cycDay); renderView("cycle"); renderHome(); }));
+  el.querySelectorAll("[data-sym]").forEach(b=>b.addEventListener("click",()=>{
+    normalizeCycle();
+    const s = b.dataset.sym;
+    const list = state.cycle.symptoms[t] || (state.cycle.symptoms[t] = []);
+    const i = list.indexOf(s);
+    if(i===-1) list.push(s); else list.splice(i,1);
+    if(!list.length) delete state.cycle.symptoms[t];
+    saveNow(); renderView("cycle"); renderHome();
+  }));
+  el.querySelector("#cyc-sym-add").addEventListener("click",()=>{
+    const v = el.querySelector("#cyc-sym-new").value.trim();
+    if(!v) return;
+    normalizeCycle();
+    if(state.cycle.customSymptoms.indexOf(v)===-1 && CYCLE_SYMPTOMS.indexOf(v)===-1) state.cycle.customSymptoms.push(v);
+    const list = state.cycle.symptoms[t] || (state.cycle.symptoms[t] = []);
+    if(list.indexOf(v)===-1) list.push(v);
+    saveNow(); renderView("cycle"); renderHome();
   });
 };
 
