@@ -7,7 +7,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#f5ecd7">
 <!--
-  The Clearing — Jasmine's personal app, v2.3.34 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop.
+  The Clearing — Jasmine's personal app, v2.3.35 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -113,6 +113,13 @@ body.arranging #icon-bar{display:none}
    cabinet tabs, so it reads as different at a glance — gold tint + star. */
 .ftab.fav{background:linear-gradient(135deg,#f3e2b8,#e8cd8d); border-color:#b08d57; color:#6b4a2f; font-weight:700}
 .ftab.fav.active{background:#b08d57; color:#fff8ea; border-color:transparent}
+/* Diary check-in option buttons (v2.3.35): tap-to-answer pills, same look
+   as the folder tabs; .on is the selected answer. */
+.dopt-wrap{display:flex; flex-wrap:wrap; margin:2px 0 6px}
+.dopt{background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:8px 14px; font:inherit; color:var(--ink); cursor:pointer; margin:2px 4px 2px 0}
+.dopt.on{background:var(--acc); color:var(--ink-deep); border-color:transparent; font-weight:700}
+.diary-note{margin:2px 0 8px}
+
 .item.fav{border-left:4px solid #b08d57}
 .fav-mark{display:inline-block; font-size:12px; font-weight:700; color:#6b4a2f; background:#f3e2b8; border:1px solid #b08d57; border-radius:999px; padding:1px 8px; margin-left:6px}
 /* v2.3.28: phone-only tile tidy (Jasmine: tiles feel clunky on mobile).
@@ -1822,14 +1829,71 @@ VIEW_RENDER.calendar = function(el){
   }));
 };
 /* ---- Diary ---- */
+/* Diary check-in options (v2.3.35) — tap buttons, like the Diary space.
+   The app stores the chosen LABEL as the entry's weather/mood/body
+   string, and the optional notes as weatherNote/moodNote/bodyNote.
+   The sync bridge pushes the saved doc verbatim (see syncPush), so there
+   is no mapping in the app: the Diary space's own model is weather enum
+   sunny/partly-cloudy/cloudy/drizzle/rain/wind/snow/storm/fog/mixed,
+   mood and health integers 1-5. Label -> space-model table, for whoever
+   merges the diary into the spaces (Hootie does that merge):
+   Sunny->sunny, Sun & cloud->partly-cloudy, Cloudy->cloudy,
+   Drizzle->drizzle, Rain->rain, Windy->wind, Snow->snow, Storm->storm,
+   Fog->fog, A bit of everything->mixed; mood Very low->1, Low->2,
+   Okay->3, Good->4, Bright->5; body Rough->1, Low->2, Okay->3, Good->4,
+   Strong->5; weatherNote->weather_note, moodNote->mood_note,
+   bodyNote->health_note. */
+const DIARY_WEATHER = ["Sunny","Sun & cloud","Cloudy","Drizzle","Rain","Windy","Snow","Storm","Fog","A bit of everything"];
+const DIARY_MOOD = ["Very low","Low","Okay","Good","Bright"];
+const DIARY_BODY = ["Rough","Low","Okay","Good","Strong"];
 VIEW_RENDER.diary = function(el){
   const t = todayStr();
   const cur = state.diary[t] || {};
+  /* Migration (v2.3.35): old entries hold free text in weather/mood/body.
+     A value that exactly matches a button label pre-selects that button;
+     unmatched text moves into that question's note field, so nothing she
+     ever wrote is lost. Render-time only — the entry is rewritten in the
+     new shape on the next tap or Save. */
+  function diaryPick(field, options){
+    const v = cur[field];
+    if(typeof v === "string" && options.includes(v)) return {sel:v, note:cur[field+"Note"]||""};
+    if(typeof v === "string" && v.trim()) return {sel:"", note:cur[field+"Note"]||v};
+    return {sel:"", note:cur[field+"Note"]||""};
+  }
+  const w = diaryPick("weather", DIARY_WEATHER);
+  const m = diaryPick("mood", DIARY_MOOD);
+  const b = diaryPick("body", DIARY_BODY);
+  function diaryOpts(field, options, pick){
+    return "<div class='dopt-wrap'>" + options.map(o=>"<button type='button' class='dopt"+(o===pick.sel?" on":"")+"' data-q='"+field+"' data-v='"+esc(o)+"'>"+esc(o)+"</button>").join("") + "</div>";
+  }
+  function diaryLine(label, val, note){
+    if(val && note) return "<div><b>"+label+":</b> "+esc(val)+" — "+esc(note)+"</div>";
+    if(val) return "<div><b>"+label+":</b> "+esc(val)+"</div>";
+    if(note) return "<div><b>"+label+":</b> "+esc(note)+"</div>";
+    return "";
+  }
+  function diaryCollect(){
+    const sel = {};
+    el.querySelectorAll(".dopt.on").forEach(x=>{ sel[x.dataset.q] = x.dataset.v; });
+    return {
+      weather: sel.weather || "",
+      mood: sel.mood || "",
+      body: sel.body || "",
+      weatherNote: el.querySelector("#d-weather-note").value.trim(),
+      moodNote: el.querySelector("#d-mood-note").value.trim(),
+      bodyNote: el.querySelector("#d-body-note").value.trim(),
+      happened: el.querySelector("#d-happened").value.trim(),
+      prompt: el.querySelector("#d-prompt").value.trim()
+    };
+  }
   el.innerHTML = viewHead(viewMeta("diary"), "The evening check-in. Every part is optional — even one tap counts as a full entry.")
     + "<div class='panel'><h3>Tonight — "+fmtDate(t)+"</h3>"
-    + "<label>Weather today — did you get out to the yard, see the birds?</label><textarea id='d-weather'>"+esc(cur.weather||"")+"</textarea>"
-    + "<label>How is your mood this evening?</label><textarea id='d-mood'>"+esc(cur.mood||"")+"</textarea>"
-    + "<label>How is your body and health today?</label><textarea id='d-body'>"+esc(cur.body||"")+"</textarea>"
+    + "<label>Weather today — did you get out to the yard, see the birds?</label>" + diaryOpts("weather", DIARY_WEATHER, w)
+    + "<input type='text' class='diary-note' id='d-weather-note' placeholder='A note on the weather, if you like' value=\""+esc(w.note)+"\">"
+    + "<label>How is your mood this evening?</label>" + diaryOpts("mood", DIARY_MOOD, m)
+    + "<input type='text' class='diary-note' id='d-mood-note' placeholder='A word or two about it, if you want' value=\""+esc(m.note)+"\">"
+    + "<label>How is your body and health today?</label>" + diaryOpts("body", DIARY_BODY, b)
+    + "<input type='text' class='diary-note' id='d-body-note' placeholder='A word or two about it, if you want' value=\""+esc(b.note)+"\">"
     + "<label>Something that happened today — anything at all</label><textarea id='d-happened'>"+esc(cur.happened||"")+"</textarea>"
     + "<label>One soft thing — what would feel kind to your body right now?</label><textarea id='d-prompt'>"+esc(cur.prompt||"")+"</textarea>"
     + "<button class='btn' id='d-save'>Save tonight's entry</button> <span class='small' id='d-saved'></span></div>"
@@ -1838,22 +1902,31 @@ VIEW_RENDER.diary = function(el){
   const keys = Object.keys(state.diary).sort().reverse();
   list.innerHTML = keys.length ? keys.map(k=>{
     const d = state.diary[k];
-    const parts = [d.weather,d.mood,d.body,d.happened,d.prompt].filter(Boolean);
-    return "<div class='item'><div class='meta'>"+fmtDate(k)+"</div>"+(parts.length?parts.map(p=>"<div>"+esc(p)+"</div>").join(""):"<div class='small'>(empty entry)</div>")+"<div><button class='btn small danger' data-del-d='"+k+"'>Delete</button></div></div>";
+    const lines = [
+      diaryLine("Weather", d.weather, d.weatherNote),
+      diaryLine("Mood", d.mood, d.moodNote),
+      diaryLine("Body", d.body, d.bodyNote),
+      d.happened ? "<div>"+esc(d.happened)+"</div>" : "",
+      d.prompt ? "<div>"+esc(d.prompt)+"</div>" : ""
+    ].filter(Boolean).join("");
+    return "<div class='item'><div class='meta'>"+fmtDate(k)+"</div>"+(lines || "<div class='small'>(empty entry)</div>")+"<div><button class='btn small danger' data-del-d='"+k+"'>Delete</button></div></div>";
   }).join("") : "<p class='small'>No entries yet. Tonight will be the first.</p>";
-  list.querySelectorAll("[data-del-d]").forEach(b=>b.addEventListener("click",()=>{ delete state.diary[b.dataset.delD]; save(); renderView("diary"); renderHome(); }));
+  list.querySelectorAll("[data-del-d]").forEach(b=>b.addEventListener("click",()=>{ delete state.diary[b.dataset.delD]; saveNow(); renderView("diary"); renderHome(); }));
+  el.querySelectorAll(".dopt").forEach(b=>b.addEventListener("click",()=>{
+    const was = b.classList.contains("on");
+    el.querySelectorAll(".dopt[data-q='"+b.dataset.q+"']").forEach(x=>x.classList.remove("on"));
+    if(!was) b.classList.add("on");
+    state.diary[t] = diaryCollect();
+    saveNow();
+    renderHome();
+  }));
   el.querySelector("#d-save").addEventListener("click",()=>{
-    state.diary[t] = {
-      weather: el.querySelector("#d-weather").value.trim(),
-      mood: el.querySelector("#d-mood").value.trim(),
-      body: el.querySelector("#d-body").value.trim(),
-      happened: el.querySelector("#d-happened").value.trim(),
-      prompt: el.querySelector("#d-prompt").value.trim()
-    };
-    save(); el.querySelector("#d-saved").textContent = "Saved.";
+    state.diary[t] = diaryCollect();
+    saveNow(); el.querySelector("#d-saved").textContent = "Saved.";
     renderView("diary"); renderHome();
   });
 };
+
 /* ---- Tarot ---- */
 function cardOfTheDay(dateStr){ return TAROT[hashStr(dateStr)%TAROT.length]; }
 function tarotCardHTML(c, label){
