@@ -7,7 +7,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#f5ecd7">
 <!--
-  The Clearing — Jasmine's personal app, v2.3.39 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears.
+  The Clearing — Jasmine's personal app, v2.3.40 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -829,6 +829,7 @@ function defaultState(){
     cycle:{periods:[],symptoms:{},customSymptoms:[]},
     tarotLog:[],
     runeLog:[],
+    pulled:{card:null,rune:null},
     myths:[],
     plants:[],
     cabinet:CABINET_SEED.map(c=>({id:uid(),...c})),
@@ -953,6 +954,7 @@ function load(){
       if(!Array.isArray(state.events)) state.events = d.events;
       if(!state.cycle || typeof state.cycle !== "object") state.cycle = d.cycle;
       normalizeCycle();
+      normalizePulled();
       migrateTileColors();
       migrateFocus();
       mergeSeedDecks();
@@ -1025,6 +1027,7 @@ function applyRemoteDoc(doc, updatedAt){
     if(!Array.isArray(state.events)) state.events = d.events;
     migrateTileColors();
     migrateFocus();
+    normalizePulled();
     mergeSeedDecks();
     mergeSeedCabinet();
     migrateCabinet();
@@ -2154,6 +2157,23 @@ VIEW_RENDER.cycle = function(el){
   });
 };
 
+/* ---- v2.3.40: pull-to-reveal for the card and rune of the day ----
+   The pick is still the date-hash draw (same all day, changes at
+   midnight). Only the reveal is gated: state.pulled records the date
+   each was pulled, so a reload never hides a pull she already made,
+   and a new day starts un-pulled again. */
+function normalizePulled(){
+  if(!state.pulled || typeof state.pulled !== "object") state.pulled = {card:null, rune:null};
+  if(typeof state.pulled.card !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(state.pulled.card)) state.pulled.card = null;
+  if(typeof state.pulled.rune !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(state.pulled.rune)) state.pulled.rune = null;
+}
+function isPulled(kind){ return !!(state.pulled && state.pulled[kind] === todayStr()); }
+function pullDaily(kind){
+  normalizePulled();
+  state.pulled[kind] = todayStr();
+  saveNow();
+  renderHero();
+}
 /* ---- Tarot ---- */
 function cardOfTheDay(dateStr){ return TAROT[hashStr(dateStr)%TAROT.length]; }
 function tarotCardHTML(c, label){
@@ -2175,9 +2195,10 @@ function tarotBrowseHTML(){
 VIEW_RENDER.tarot = function(el){
   const t = todayStr();
   const cotd = cardOfTheDay(t);
+  const pulled = isPulled("card");
   el.innerHTML = viewHead(viewMeta("tarot"), "Rider-Waite-Smith Tarot — the classic 1909 deck, illustrated by Pamela Colman Smith. The card of the day is the same all day, and changes at midnight.")
-    + tarotCardHTML(cotd, "Card of the day — "+fmtDate(t))
-    + "<button class='btn' id='tarot-draw'>Draw a card</button> <button class='btn ghost' id='tarot-log'" + (state.tarotLog.some(l=>l.date===t && l.card===cotd.name) ? " disabled>Already logged today" : ">Log today's card") + "</button>"
+    + (pulled ? tarotCardHTML(cotd, "Card of the day — "+fmtDate(t)) : "<div class='panel'><p>Your card for today is waiting — pull it when you're ready.</p><button class='btn' id='tarot-pull'>Pull today's card</button></div>")
+    + "<button class='btn' id='tarot-draw'>Draw a card</button>" + (pulled ? " <button class='btn ghost' id='tarot-log'" + (state.tarotLog.some(l=>l.date===t && l.card===cotd.name) ? " disabled>Already logged today" : ">Log today's card") + "</button>" : "")
     + "<div id='tarot-drawn'></div>"
     + "<div class='panel'><h3>Past pulls</h3><div id='tarot-list'></div></div>"
     + tarotBrowseHTML();
@@ -2187,7 +2208,10 @@ VIEW_RENDER.tarot = function(el){
     const c = TAROT[Math.floor(Math.random()*TAROT.length)];
     el.querySelector("#tarot-drawn").innerHTML = tarotCardHTML(c, null);
   });
-  el.querySelector("#tarot-log").addEventListener("click",()=>{
+  const _tp = el.querySelector("#tarot-pull");
+  if(_tp) _tp.addEventListener("click",()=>{ pullDaily("card"); renderView("tarot"); });
+  const _tl = el.querySelector("#tarot-log");
+  if(_tl) _tl.addEventListener("click",()=>{
     if(state.tarotLog.some(l=>l.date===t && l.card===cotd.name)) return;
     state.tarotLog.unshift({date:t, card:cotd.name});
     saveNow(); renderView("tarot");
@@ -2225,9 +2249,10 @@ function runeOfTheDay(dateStr){ return RUNES[hashStr(dateStr)%RUNES.length]; }
 VIEW_RENDER.runes = function(el){
   const t = todayStr();
   const rotd = runeOfTheDay(t);
+  const pulled = isPulled("rune");
   el.innerHTML = viewHead(viewMeta("runes"), "Elder Futhark — the 24 runes. The rune of the day is the same all day, and changes at midnight.")
-    + "<div class='tarot-card'><div class='small'>Rune of the day — "+fmtDate(t)+"</div><div class='c-name' style='font-size:44px'>"+rotd.glyph+"</div><div class='c-name'>"+esc(rotd.name)+"</div><div class='c-line'>“"+esc(rotd.line)+"”</div></div>"
-    + "<button class='btn' id='rune-draw'>Draw a rune</button> <button class='btn ghost' id='rune-log'" + (state.runeLog.some(l=>l.date===t && l.rune===rotd.name) ? " disabled>Already logged today" : ">Log today's rune") + "</button>"
+    + (pulled ? "<div class='tarot-card'><div class='small'>Rune of the day — "+fmtDate(t)+"</div><div class='c-name' style='font-size:44px'>"+rotd.glyph+"</div><div class='c-name'>"+esc(rotd.name)+"</div><div class='c-line'>“"+esc(rotd.line)+"”</div></div>" : "<div class='panel'><p>Your rune for today is waiting — pull it when you're ready.</p><button class='btn' id='rune-pull'>Pull today's rune</button></div>")
+    + "<button class='btn' id='rune-draw'>Draw a rune</button>" + (pulled ? " <button class='btn ghost' id='rune-log'" + (state.runeLog.some(l=>l.date===t && l.rune===rotd.name) ? " disabled>Already logged today" : ">Log today's rune") + "</button>" : "")
     + "<div id='rune-drawn'></div>"
     + "<div class='panel'><h3>The 24 runes</h3><div class='rune-grid'>"
     + RUNES.map(r=>"<div class='rune-card'><div class='r-glyph'>"+r.glyph+"</div><div class='r-name'>"+esc(r.name)+"</div><div class='r-line'>"+esc(r.line)+"</div></div>").join("")
@@ -2240,7 +2265,10 @@ VIEW_RENDER.runes = function(el){
     const r = RUNES[Math.floor(Math.random()*RUNES.length)];
     el.querySelector("#rune-drawn").innerHTML = "<div class='tarot-card'><div class='c-name' style='font-size:44px'>"+r.glyph+"</div><div class='c-name'>"+esc(r.name)+"</div><div class='c-line'>“"+esc(r.line)+"”</div></div>";
   });
-  el.querySelector("#rune-log").addEventListener("click",()=>{
+  const _rp = el.querySelector("#rune-pull");
+  if(_rp) _rp.addEventListener("click",()=>{ pullDaily("rune"); renderView("runes"); });
+  const _rl = el.querySelector("#rune-log");
+  if(_rl) _rl.addEventListener("click",()=>{
     if(state.runeLog.some(l=>l.date===t && l.rune===rotd.name)) return;
     state.runeLog.unshift({date:t, rune:rotd.name});
     saveNow(); renderView("runes");
@@ -3048,7 +3076,11 @@ function renderHero(){
   const _ymd = ymdLine(t).split(" · ");
   $("#hero-ymd").innerHTML = "<span style='white-space:nowrap'>"+_ymd[0]+"</span> · <span style='white-space:nowrap'>"+_ymd[1]+"</span><br><span style='white-space:nowrap'>"+_ymd[2]+"</span>";
   $("#hero-astro").innerHTML = "<span style='white-space:nowrap'>"+ICONS.sun+" Sun "+sun.west.deg+"° "+sun.west.sign+"</span><br><span style='white-space:nowrap'>"+ICONS.crescent+" "+ph.name+" Moon"+(sign?" in "+sign:"")+"</span>";
-  $("#hero-personal").innerHTML = "Personal day "+n.day+"<br>Card: "+cardOfTheDay(t).name+" · Rune: "+runeOfTheDay(t).name;
+  const _cardPart = isPulled("card") ? "Card: "+cardOfTheDay(t).name : "<span id='hero-pull-card' style='cursor:pointer;text-decoration:underline'>Pull your card</span>";
+  const _runePart = isPulled("rune") ? "Rune: "+runeOfTheDay(t).name : "<span id='hero-pull-rune' style='cursor:pointer;text-decoration:underline'>Pull your rune</span>";
+  $("#hero-personal").innerHTML = "Personal day "+n.day+"<br>"+_cardPart+" · "+_runePart;
+  const _hpc = $("#hero-pull-card"); if(_hpc) _hpc.addEventListener("click",()=>pullDaily("card"));
+  const _hpr = $("#hero-pull-rune"); if(_hpr) _hpr.addEventListener("click",()=>pullDaily("rune"));
 }
 loadSyncMeta();
 load();
