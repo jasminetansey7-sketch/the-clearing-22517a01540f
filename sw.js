@@ -1,6 +1,6 @@
-// The Clearing — service worker, v2.3.29: document is network-first (updates land on the first open after a push); assets stay stale-while-revalidate.
+// The Clearing — service worker, v2.3.31: document is network-first (updates land on the first open after a push); assets stay stale-while-revalidate.
 // Cache name MUST change with every app version.
-const CACHE = "clearing-v2.3.30";
+const CACHE = "clearing-v2.3.31";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", (e) => {
