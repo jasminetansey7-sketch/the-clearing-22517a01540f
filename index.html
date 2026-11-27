@@ -7,7 +7,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#f5ecd7">
 <!--
-  The Clearing — Jasmine's personal app, v2.3.29 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone).
+  The Clearing — Jasmine's personal app, v2.3.30 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -266,7 +266,6 @@ footer{margin:26px 0 10px; text-align:center}
   <div class="astro" id="hero-ymd"></div>
   <div class="astro" id="hero-astro"></div>
   <div class="astro personal" id="hero-personal"></div>
-  <div class="hero-btns"><button class="btn ghost small" id="btn-arrange">✥ Arrange tiles</button></div>
   </div>
   <span class="hero-branch flip" aria-hidden="true"><svg viewBox='0 0 36 160' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'><path d='M18 158 C13 118, 23 78, 18 6' fill='none' stroke='#8a5f28' stroke-width='2' opacity='0.45' stroke-linecap='round'/><path d='M18 120 C11 108, 7 100, 5 88' fill='none' stroke='#8a5f28' stroke-width='1.6' opacity='0.4' stroke-linecap='round'/><path d='M18 84 C25 74, 29 64, 31 52' fill='none' stroke='#8a5f28' stroke-width='1.6' opacity='0.4' stroke-linecap='round'/><path d='M18 48 C12 40, 9 32, 8 22' fill='none' stroke='#8a5f28' stroke-width='1.6' opacity='0.4' stroke-linecap='round'/><path d='M18 142 C24 134, 28 126, 30 116' fill='none' stroke='#8a5f28' stroke-width='1.6' opacity='0.4' stroke-linecap='round'/><path d='M0 0 Q5.0 -7.2 0 -16 Q-5.0 -7.2 0 0 Z' fill='#8a9a6b' opacity='0.35' transform='translate(12,140) rotate(-38)'/><path d='M0 0 Q5.0 -7.2 0 -16 Q-5.0 -7.2 0 0 Z' fill='#8a9a6b' opacity='0.35' transform='translate(25,106) rotate(28)'/><path d='M0 0 Q5.0 -7.2 0 -16 Q-5.0 -7.2 0 0 Z' fill='#8a9a6b' opacity='0.35' transform='translate(11,70) rotate(-30)'/><path d='M0 0 Q5.0 -7.2 0 -16 Q-5.0 -7.2 0 0 Z' fill='#8a9a6b' opacity='0.35' transform='translate(25,38) rotate(32)'/><path d='M0 0 Q5.0 -7.2 0 -16 Q-5.0 -7.2 0 0 Z' fill='#8a9a6b' opacity='0.35' transform='translate(15,20) rotate(-18)'/><path d='M0 0 Q5.0 -7.2 0 -16 Q-5.0 -7.2 0 0 Z' fill='#8a9a6b' opacity='0.35' transform='translate(24,150) rotate(18)'/></svg></span>
 </div>
@@ -1302,7 +1301,7 @@ function attachTileGestures(){
 function openPicker(viewId){
   const t = TILES.find(x=>x.id===viewId);
   const m = $("#picker-modal");
-  m.innerHTML = "<h2>Colour for "+esc(homeName(t))+"</h2><p class='small'>In Arrange tiles, tap a tile to change its colour. On the home grid, hold a tile instead. Your choice is saved on this phone.</p>";
+  m.innerHTML = "<h2>Colour for "+esc(homeName(t))+"</h2><p class='small'>Hold a tile on the home grid to change its colour. Your choice is saved on this phone.</p>";
   PALETTE.forEach((p,i)=>{
     const b = document.createElement("button");
     b.className = "swatch"; b.style.background = p.bg; if(p.dark) b.style.color = "#f7efdd"; b.textContent = p.name;
@@ -1753,7 +1752,7 @@ VIEW_RENDER.tarot = function(el){
   const cotd = cardOfTheDay(t);
   el.innerHTML = viewHead(viewMeta("tarot"), "Rider-Waite-Smith Tarot — the classic 1909 deck, illustrated by Pamela Colman Smith. The card of the day is the same all day, and changes at midnight.")
     + tarotCardHTML(cotd, "Card of the day — "+fmtDate(t))
-    + "<button class='btn' id='tarot-draw'>Draw a card</button> <button class='btn ghost' id='tarot-log'>Log today's card</button>"
+    + "<button class='btn' id='tarot-draw'>Draw a card</button> <button class='btn ghost' id='tarot-log'" + (state.tarotLog.some(l=>l.date===t && l.card===cotd.name) ? " disabled>Already logged today" : ">Log today's card") + "</button>"
     + "<div id='tarot-drawn'></div>"
     + "<div class='panel'><h3>Past pulls</h3><div id='tarot-list'></div></div>"
     + tarotBrowseHTML();
@@ -1766,7 +1765,7 @@ VIEW_RENDER.tarot = function(el){
   el.querySelector("#tarot-log").addEventListener("click",()=>{
     if(state.tarotLog.some(l=>l.date===t && l.card===cotd.name)) return;
     state.tarotLog.unshift({date:t, card:cotd.name});
-    save(); renderView("tarot");
+    saveNow(); renderView("tarot");
   });
 };
 /* ============================== runes (seeded) ============================== */
@@ -1803,7 +1802,7 @@ VIEW_RENDER.runes = function(el){
   const rotd = runeOfTheDay(t);
   el.innerHTML = viewHead(viewMeta("runes"), "Elder Futhark — the 24 runes. The rune of the day is the same all day, and changes at midnight.")
     + "<div class='tarot-card'><div class='small'>Rune of the day — "+fmtDate(t)+"</div><div class='c-name' style='font-size:44px'>"+rotd.glyph+"</div><div class='c-name'>"+esc(rotd.name)+"</div><div class='c-line'>“"+esc(rotd.line)+"”</div></div>"
-    + "<button class='btn' id='rune-draw'>Draw a rune</button> <button class='btn ghost' id='rune-log'>Log today's rune</button>"
+    + "<button class='btn' id='rune-draw'>Draw a rune</button> <button class='btn ghost' id='rune-log'" + (state.runeLog.some(l=>l.date===t && l.rune===rotd.name) ? " disabled>Already logged today" : ">Log today's rune") + "</button>"
     + "<div id='rune-drawn'></div>"
     + "<div class='panel'><h3>The 24 runes</h3><div class='rune-grid'>"
     + RUNES.map(r=>"<div class='rune-card'><div class='r-glyph'>"+r.glyph+"</div><div class='r-name'>"+esc(r.name)+"</div><div class='r-line'>"+esc(r.line)+"</div></div>").join("")
@@ -1819,7 +1818,7 @@ VIEW_RENDER.runes = function(el){
   el.querySelector("#rune-log").addEventListener("click",()=>{
     if(state.runeLog.some(l=>l.date===t && l.rune===rotd.name)) return;
     state.runeLog.unshift({date:t, rune:rotd.name});
-    save(); renderView("runes");
+    saveNow(); renderView("runes");
   });
 };
 /* ---- Moon ---- */
@@ -2478,7 +2477,7 @@ $("#import-file").addEventListener("change",e=>{
   r.readAsText(f);
   e.target.value = "";
 });
-$("#btn-arrange").addEventListener("click",()=>setArrangeMode(!arrangeMode));
+const _ba=$("#btn-arrange"); if(_ba) _ba.addEventListener("click",()=>setArrangeMode(!arrangeMode));
 $("#btn-sync").addEventListener("click",()=>showView("sync"));
 /* ---- service worker (hosted version only; inert on file://) ---- */
 let swUpdateReady = false;
@@ -2514,7 +2513,7 @@ function renderHero(){
   $("#hero-date").textContent = dayName+", "+dateLong;
   $("#hero-ymd").textContent = ymdLine(t);
   $("#hero-astro").innerHTML = ICONS.sun+" Sun "+sun.west.deg+"° "+sun.west.sign+" · "+ICONS.crescent+" "+ph.name+" Moon"+(sign?" in "+sign:"");
-  $("#hero-personal").textContent = "Personal day "+n.day+" · Card: "+cardOfTheDay(t).name+" · Rune: "+runeOfTheDay(t).name;
+  $("#hero-personal").innerHTML = "Personal day "+n.day+"<br>Card: "+cardOfTheDay(t).name+" · Rune: "+runeOfTheDay(t).name;
 }
 loadSyncMeta();
 load();
