@@ -7,7 +7,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#f5ecd7">
 <!--
-  The Clearing — Jasmine's personal app, v2.3.38 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases.
+  The Clearing — Jasmine's personal app, v2.3.39 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -836,6 +836,7 @@ function defaultState(){
     mantras:[],
     ravens:[],
     focus:[],
+    focusId:null,
     spots:[{id:uid(),name:"Stump clearing",note:"Big old-growth stumps — the clearing to check for ravens.",x:62,y:38,lat:null,lng:null}],
     sajuNotes:[]
   };
@@ -953,6 +954,7 @@ function load(){
       if(!state.cycle || typeof state.cycle !== "object") state.cycle = d.cycle;
       normalizeCycle();
       migrateTileColors();
+      migrateFocus();
       mergeSeedDecks();
       if(mergeSeedCabinet()) saveNow(); // persist new seed items at once
       if(migrateCabinet()) saveNow(); // persist the migrated cabinet at once
@@ -1022,6 +1024,7 @@ function applyRemoteDoc(doc, updatedAt){
     state = Object.assign(d, parsed);
     if(!Array.isArray(state.events)) state.events = d.events;
     migrateTileColors();
+    migrateFocus();
     mergeSeedDecks();
     mergeSeedCabinet();
     migrateCabinet();
@@ -1180,7 +1183,7 @@ const TILES = [
   {id:"cabinet",  size:"small",  sub:()=>state.cabinet.length+" things in the cabinet"},
   {id:"calendar", size:"small", tall:true, sub:()=>{ const t=todayStr(); const up=state.events.filter(e=>e.date>=t).sort((a,b)=>a.date<b.date?-1:1); if(!up.length) return "Nothing coming up"; const e=up[0]; const title=e.title.length>24? e.title.slice(0,24)+"…" : e.title; return shortDate(e.date)+" · "+title; }},
   {id:"diary", folder:true, size:"small",  titleOnly:true, sub:()=>{ const keys=Object.keys(state.diary).sort(); if(!keys.length) return "This evening's check-in"; const last=keys[keys.length-1]; return last===todayStr()? "Tonight's entry written" : "Last entry "+shortDate(last); }},
-  {id:"focus",    size:"small",  titleOnly:true, sub:()=>{ const n=nextFocus(); return n? "Next: "+n.text : "Nothing on the list"; }},
+  {id:"focus",    size:"small",  titleOnly:true, sub:()=>{ const n=nextFocus(); return n? "In focus: "+n.text : (state.focus.length? state.focus.length+" on the list" : "Nothing on the list"); }},
   {id:"mantra",   size:"small",  titleOnly:true, sub:()=>state.mantras.length? (state.mantras[0].text.length>30? state.mantras[0].text.slice(0,30)+"…" : state.mantras[0].text) : "Yours to fill"},
   {id:"land",     folder:true,   size:"medium", sub:()=>"707 Map · Compass · Raven Log · Field Guide"}
 ];
@@ -2570,40 +2573,76 @@ VIEW_RENDER.ravens = function(el){
   });
   el.querySelectorAll("[data-del-rv]").forEach(b=>b.addEventListener("click",()=>{ state.ravens = state.ravens.filter(r=>r.id!==b.dataset.delRv); save(); renderView("ravens"); renderHome(); }));
 };
+/* v2.3.39: the old Focus shape was [{id,text,done,snoozedUntil}] with
+   Done / Not now. The new shape is a plain list [{id,text}] plus
+   state.focusId (the one item in focus, or null). Open items carry
+   over; finished ones were already done, so they are dropped; a focus
+   value that is not an array at all is dropped too. */
+function migrateFocus(){
+  if(!Array.isArray(state.focus)){ state.focus = []; state.focusId = null; return; }
+  state.focus = state.focus.filter(f=>f && typeof f.text === "string" && f.text.trim() && !f.done)
+    .map(f=>({id:(typeof f.id === "string" && f.id) ? f.id : uid(), text:f.text}));
+  if(typeof state.focusId !== "string" || !state.focus.some(f=>f.id===state.focusId)) state.focusId = null;
+}
 /* ---- Focus ---- */
+/* v2.3.39: the focus is the one item she tapped, stored as state.focusId.
+   The old shape (done / snoozedUntil) is gone — see migrateFocus(). */
 function nextFocus(){
-  const t = todayStr();
-  return state.focus.find(f=>!f.done && (!f.snoozedUntil || f.snoozedUntil<=t)) || null;
+  if(!state.focusId) return null;
+  return state.focus.find(f=>f.id===state.focusId) || null;
 }
 VIEW_RENDER.focus = function(el){
-  const n = nextFocus();
-  const open = state.focus.filter(f=>!f.done).length;
-  const done = state.focus.filter(f=>f.done).length;
-  el.innerHTML = viewHead(viewMeta("focus"), "One thing at a time. Done moves to the next; Not now sets it aside until tomorrow.")
-    + (n
-      ? "<div class='panel' style='text-align:center'><div class='small'>Focus — one thing</div><h2 style='margin:10px 0'>"+esc(n.text)+"</h2><button class='btn' id='focus-done'>Done</button> <button class='btn ghost' id='focus-later'>Not now</button></div>"
-      : "<div class='panel'><p>"+(open? "Everything is set aside until tomorrow." : "Nothing on the list. Add one small thing below.")+"</p></div>")
-    + "<p class='small'>"+open+" open · "+done+" done</p>"
-    + "<div class='panel'><h3>Add one thing</h3><div class='row'><input type='text' id='focus-in' placeholder='One small thing…' style='flex:1'><button class='btn' id='focus-add'>Add</button></div></div>"
-    + "<div class='panel'><h3>All of them</h3><div id='focus-list'>"
-    + (state.focus.length? state.focus.map(f=>"<div class='item'><span style='"+(f.done?"text-decoration:line-through;opacity:.6":"")+"'>"+esc(f.text)+"</span>"+(f.snoozedUntil?" <span class='meta'>· set aside until "+fmtDate(f.snoozedUntil)+"</span>":"")+"<div><button class='btn small danger' data-del-focus='"+f.id+"'>Delete</button></div></div>").join("") : "<p class='small'>The list is empty.</p>")
+  const items = Array.isArray(state.focus) ? state.focus : [];
+  const fid = state.focusId;
+  const t = todayStr();
+  el.innerHTML = viewHead(viewMeta("focus"), "One thing at a time — tap one to make it your focus, \u2713 when it's done.")
+    + "<div class='panel'><h3>Today — "+fmtDate(t)+"</h3><div class='row'><input type='text' id='focus-in' placeholder='Something you'd like to do today' style='flex:1'><button class='btn' id='focus-add'>Add</button></div></div>"
+    + "<div class='panel'><h3>Today's list</h3><div id='focus-list'>"
+    + (items.length? items.map((f,i)=>{
+        const isF = f.id===fid;
+        return "<div class='item"+(isF?" fav":"")+"'>"
+          + "<span>"+esc(f.text)+"</span>"
+          + (isF?" <span class='fav-mark'>In focus</span>":"")
+          + "<div style='margin-top:8px'>"
+          + "<button class='btn small' data-focus-set='"+f.id+"'>"+(isF?"Unfocus":"Focus")+"</button> "
+          + "<button class='btn small' data-focus-done='"+f.id+"'>\u2713 Done</button> "
+          + "<button class='btn small' data-focus-up='"+f.id+"'"+(i===0?" disabled":"")+">\u2191</button> "
+          + "<button class='btn small' data-focus-down='"+f.id+"'"+(i===items.length-1?" disabled":"")+">\u2193</button> "
+          + "<button class='btn small danger' data-del-focus='"+f.id+"'>\u00d7</button>"
+          + "</div></div>";
+      }).join("") : "<p class='small'>Nothing on the list yet — add one small thing.</p>")
     + "</div></div>";
   const add = ()=>{
     const v = el.querySelector("#focus-in").value.trim(); if(!v) return;
-    state.focus.push({id:uid(),text:v,done:false,snoozedUntil:null}); save(); renderView("focus"); renderHome();
+    state.focus.push({id:uid(),text:v}); saveNow(); renderView("focus"); renderHome();
   };
   el.querySelector("#focus-add").addEventListener("click",add);
   el.querySelector("#focus-in").addEventListener("keydown",e=>{ if(e.key==="Enter") add(); });
-  const d = el.querySelector("#focus-done");
-  if(d) d.addEventListener("click",()=>{ n.done = true; save(); renderView("focus"); renderHome(); });
-  const l = el.querySelector("#focus-later");
-  if(l) l.addEventListener("click",()=>{
-    const p = todayStr().split("-");
-    const d2 = new Date(Date.UTC(+p[0],+p[1]-1,+p[2])+86400000);
-    n.snoozedUntil = d2.toISOString().slice(0,10);
-    save(); renderView("focus"); renderHome();
-  });
-  el.querySelectorAll("[data-del-focus]").forEach(b=>b.addEventListener("click",()=>{ state.focus = state.focus.filter(f=>f.id!==b.dataset.delFocus); save(); renderView("focus"); renderHome(); }));
+  el.querySelectorAll("[data-focus-set]").forEach(b=>b.addEventListener("click",()=>{
+    state.focusId = (state.focusId===b.dataset.focusSet) ? null : b.dataset.focusSet;
+    saveNow(); renderView("focus"); renderHome();
+  }));
+  el.querySelectorAll("[data-focus-done]").forEach(b=>b.addEventListener("click",()=>{
+    const id = b.dataset.focusDone;
+    if(state.focusId===id) state.focusId = null;
+    state.focus = state.focus.filter(f=>f.id!==id);
+    saveNow(); renderView("focus"); renderHome();
+  }));
+  const move = (id, dir)=>{
+    const i = state.focus.findIndex(f=>f.id===id);
+    const j = i + dir;
+    if(i<0 || j<0 || j>=state.focus.length) return;
+    const tmp = state.focus[i]; state.focus[i] = state.focus[j]; state.focus[j] = tmp;
+    saveNow(); renderView("focus"); renderHome();
+  };
+  el.querySelectorAll("[data-focus-up]").forEach(b=>b.addEventListener("click",()=>move(b.dataset.focusUp,-1)));
+  el.querySelectorAll("[data-focus-down]").forEach(b=>b.addEventListener("click",()=>move(b.dataset.focusDown,1)));
+  el.querySelectorAll("[data-del-focus]").forEach(b=>b.addEventListener("click",()=>{
+    const id = b.dataset.delFocus;
+    if(state.focusId===id) state.focusId = null;
+    state.focus = state.focus.filter(f=>f.id!==id);
+    saveNow(); renderView("focus"); renderHome();
+  }));
 };
 /* ---- 707 Map ---- */
 /* Real data-driven map. Equirectangular projection over the park bounding box
@@ -2907,7 +2946,7 @@ VIEW_RENDER.field = function(el){
 /* ---- Sync with Hootie ---- */
 VIEW_RENDER.sync = function(el){
   const addedEvents = state.events.filter(e=>!EVENTS_SEED.some(s=>s.date===e.date && s.title===e.title)).length;
-  const openFocus = state.focus.filter(f=>!f.done).length;
+  const openFocus = state.focus.length;
   const diaryN = Object.keys(state.diary).length;
   el.innerHTML = backBtn()
     + "<h2>⇅ Sync with Hootie</h2>"
@@ -2956,6 +2995,7 @@ const _if=$("#import-file"); if(_if) _if.addEventListener("change",e=>{
       const d = defaultState();
       state = Object.assign(d, data);
       migrateTileColors();
+      migrateFocus();
       mergeSeedDecks();
       mergeSeedCabinet();
       migrateCabinet();
