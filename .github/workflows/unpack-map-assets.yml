@@ -1,0 +1,25 @@
+name: Unpack map assets
+on:
+  push:
+    paths:
+      - 'map-assets.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack tiles and fonts
+        run: |
+          python3 -c "import zipfile; zipfile.ZipFile('map-assets.zip').extractall('.')"
+          rm map-assets.zip
+      - name: Commit unpacked files
+        run: |
+          git config user.name "hootie"
+          git config user.email "hootie@local"
+          git add tiles fonts
+          git status --short
+          git commit -m "Add 707 map tiles and fonts" || echo "nothing to commit"
+          git push
