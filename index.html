@@ -6,8 +6,10 @@
 <title>The Clearing</title>
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#f5ecd7">
+<link href="maplibre/maplibre-gl.css" rel="stylesheet">
+<script src="maplibre/maplibre-gl.js"></script>
 <!--
-  The Clearing — Jasmine's personal app, v2.3.45 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination, Diary, Focus; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day. v2.3.41: the Focus view gains a History tab — finished and removed tasks are saved by day instead of disappearing; a not-done one can be brought back to Today's list. v2.3.42: the Mythology section gains a Creatures sub-tab — 13 creatures in Local and General sections, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on a creature page restores it. v2.3.43: the Divination & Guides section gains an Animal Medicine tab — 14 animals in Jasmine's order, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on an animal page restores it. v2.3.44: the duplicate 'current' pill in the Saju luck-pillars timeline is dropped at Jasmine's ask — the 乙巳 chapter keeps its highlight and its 'current (changed 22 April 2026)' wording. v2.3.44 also fixes the Mantra save: adding or deleting a mantra now saves immediately (saveNow), so it is never lost if the app is closed quickly. v2.3.45: the deity, creature, and animal lists are now alphabetical — the Pantheon and Animal Medicine in A-to-Z order, the Creatures kept in their Local and General sections, alphabetical within each.
+  The Clearing — Jasmine's personal app, v2.3.46 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination, Diary, Focus; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day. v2.3.41: the Focus view gains a History tab — finished and removed tasks are saved by day instead of disappearing; a not-done one can be brought back to Today's list. v2.3.42: the Mythology section gains a Creatures sub-tab — 13 creatures in Local and General sections, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on a creature page restores it. v2.3.43: the Divination & Guides section gains an Animal Medicine tab — 14 animals in Jasmine's order, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on an animal page restores it. v2.3.44: the duplicate 'current' pill in the Saju luck-pillars timeline is dropped at Jasmine's ask — the 乙巳 chapter keeps its highlight and its 'current (changed 22 April 2026)' wording. v2.3.44 also fixes the Mantra save: adding or deleting a mantra now saves immediately (saveNow), so it is never lost if the app is closed quickly. v2.3.45: the deity, creature, and animal lists are now alphabetical — the Pantheon and Animal Medicine in A-to-Z order, the Creatures kept in their Local and General sections, alphabetical within each. v2.3.46: the 707 Map is rebuilt on MapLibre with the offline tile set — the surveyed posts as tappable dots with their numbers, trails that light their posts gold (no lines drawn), the gold home pin, and a live-location dot; it works fully offline after the first load. The Loops, Alternatives, and Entrances lists from the old sketch map are gone with it.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -2947,174 +2949,113 @@ VIEW_RENDER.history = function(el){
     saveNow(); renderView("history"); renderHome();
   }));
 };
-/* ---- 707 Map ---- */
-/* Real data-driven map. Equirectangular projection over the park bounding box
-   (widened south so all 89 surveyed posts fit — see the data block note).
-   Trail lines are polylines through each trail's surveyed posts, in order.
-   User spots stay in state.spots as before; spots with real lat/lng are
-   projected onto the map, spots placed on the old sketch (x/y only) are
-   listed until Jasmine re-places them by tapping the map. */
-const MAP_BBOX = {minLat:49.146, maxLat:49.178, minLng:-123.835, maxLng:-123.785};
-const MAP_W = 720, MAP_H = 700;
-function mapXY(lat,lng){
-  return {
-    x:(lng-MAP_BBOX.minLng)/(MAP_BBOX.maxLng-MAP_BBOX.minLng)*MAP_W,
-    y:(MAP_BBOX.maxLat-lat)/(MAP_BBOX.maxLat-MAP_BBOX.minLat)*MAP_H
-  };
-}
-function mapLatLng(x,y){
-  return {
-    lat:MAP_BBOX.maxLat-(y/MAP_H)*(MAP_BBOX.maxLat-MAP_BBOX.minLat),
-    lng:MAP_BBOX.minLng+(x/MAP_W)*(MAP_BBOX.maxLng-MAP_BBOX.minLng)
-  };
-}
+/* ---- 707 Map (MapLibre, offline) ---- */
+/* MapLibre GL JS 4.7.1, vendored locally (maplibre/maplibre-gl.js and
+   maplibre-gl.css) — never the CDN, so the map works offline after the
+   first load, once the service worker has cached the assets.
+   Basemap: 155 OpenStreetMap raster tiles in tiles/{z}/{x}/{y}.png,
+   zooms 12-16. Post numbers are drawn from the local Noto Sans glyphs
+   (fonts/Noto Sans Regular/*.pbf). Post coordinates are the surveyed
+   positions (MAP_POSTS, from posts.json) — the reliable positions.
+   Trail lines are NOT drawn: tapping a trail lights its posts gold,
+   per Theo's rule. User spots stay in state.spots; spots with real
+   lat/lng render as markers, spots placed on the old sketch (x/y only)
+   are listed until Jasmine re-places them by tapping the map. */
+const MAP_STYLE = {
+  version: 8,
+  glyphs: "./fonts/{fontstack}/{range}.pbf",
+  sources: {
+    "park-tiles": {
+      type: "raster",
+      tiles: ["./tiles/{z}/{x}/{y}.png"],
+      tileSize: 256,
+      minzoom: 12,
+      maxzoom: 16,
+      attribution: "© OpenStreetMap contributors"
+    }
+  },
+  layers: [{ id: "park-tiles", type: "raster", source: "park-tiles" }]
+};
+const MAP_CENTER = [-123.81, 49.162];
+const MAP_ZOOM = 14;
+const MAP_BOUNDS = [[-123.837, 49.144], [-123.783, 49.181]];
+const MAP_POST_FILL = "#2c4a3f";
+const MAP_GOLD = "#d9a441";
+const MAP_LABEL_COLOUR = "#eef3ee";
 const MAP_POSTS_BY_NUM = {};
 MAP_POSTS.forEach(p=>{ MAP_POSTS_BY_NUM[p.number]=p; });
-const MAP_ALL_ROUTES = MAP_ROUTES.concat(MAP_ALT_ROUTES);
-const TRAIL_COLOURS = ["#a8763e","#6b7a4a","#8a5f68","#b06a4a","#7a6a4f","#c07f3e"];
-let mapSelPost = null, mapSelRoute = null, mapArmSpot = null, mapPending = null;
-VIEW_RENDER.map = function(el){
-  const postXY = n => { const p = MAP_POSTS_BY_NUM[n]; return p ? mapXY(p.lat,p.lng) : null; };
-  const t = viewMeta("map");
-  let trailsSvg = "";
-  MAP_TRAILS.forEach((tr,i)=>{
-    const pts = tr.posts.map(postXY).filter(Boolean);
-    if(pts.length<2) return;
-    const col = TRAIL_COLOURS[i % TRAIL_COLOURS.length];
-    trailsSvg += "<polyline points='"+pts.map(p=>p.x.toFixed(1)+","+p.y.toFixed(1)).join(" ")+"' fill='none' stroke='"+col+"' stroke-width='2' opacity='0.85'/>";
-    const mid = pts[Math.floor(pts.length/2)];
-    trailsSvg += "<text x='"+mid.x.toFixed(1)+"' y='"+(mid.y-6).toFixed(1)+"' fill='"+col+"' font-size='10' text-anchor='middle' style='paint-order:stroke' stroke='#f7efdd' stroke-width='3'>"+esc(tr.name)+"</text>";
-  });
-  let routeSvg = "";
-  if(mapSelRoute){
-    const r = MAP_ALL_ROUTES.find(x=>x.id===mapSelRoute);
-    if(r){
-      const pts = r.seq.map(postXY).filter(Boolean);
-      if(pts.length>1) routeSvg = "<polyline points='"+pts.map(p=>p.x.toFixed(1)+","+p.y.toFixed(1)).join(" ")+"' fill='none' stroke='#c05a2e' stroke-width='5' opacity='0.9' stroke-linecap='round' stroke-linejoin='round'/>";
-      routeSvg += r.seq.map(n=>{ const p=postXY(n); return p? "<circle cx='"+p.x.toFixed(1)+"' cy='"+p.y.toFixed(1)+"' r='9' fill='none' stroke='#c05a2e' stroke-width='2'/>":""; }).join("");
-    }
+let jasmineMap = null;
+let mapSelPost = null, mapSelTrail = null, mapArmSpot = null, mapPending = null;
+let mapLiveWatch = null, mapLivePos = null, mapSpotMarkers = [];
+function mapPostsGeoJSON(){
+  return {
+    type: "FeatureCollection",
+    features: MAP_POSTS.map(p=>({
+      type: "Feature",
+      properties: {
+        number: p.number,
+        label: p.label,
+        trails: MAP_TRAILS.filter(t=>t.posts.indexOf(p.number)>-1).map(t=>t.key)
+      },
+      geometry: { type: "Point", coordinates: [p.lng, p.lat] }
+    }))
+  };
+}
+function mapPostColour(){
+  return ["case",
+    ["==", ["get", "number"], mapSelPost==null ? -1 : mapSelPost], MAP_GOLD,
+    ["in", mapSelTrail==null ? "" : mapSelTrail, ["get", "trails"]], MAP_GOLD,
+    MAP_POST_FILL];
+}
+function refreshMapHighlights(){
+  if(!jasmineMap) return;
+  if(!jasmineMap.getLayer("park-posts")) return;
+  jasmineMap.setPaintProperty("park-posts", "circle-color", mapPostColour());
+}
+function drawMapPostInfo(el){
+  const box = el ? el.querySelector("#map-post-info") : document.querySelector("#map-post-info");
+  if(!box) return;
+  if(mapSelPost==null){
+    box.innerHTML = "<p class='small'>Tap a numbered post to see its description.</p>";
+    return;
   }
-  let entSvg = "";
-  MAP_ENTRANCES.forEach(e=>{
-    const p = postXY(e.post); if(!p) return;
-    entSvg += "<rect x='"+(p.x-5).toFixed(1)+"' y='"+(p.y-5).toFixed(1)+"' width='10' height='10' fill='none' stroke='#6b7a4a' stroke-width='1.6'/>";
+  const p = MAP_POSTS_BY_NUM[mapSelPost];
+  if(!p){ box.innerHTML = ""; return; }
+  box.innerHTML = "<div class='panel'><h3>Post "+p.number+(p.label?" — "+esc(p.label):"")+"</h3>"
+    + "<p>"+esc(MAP_DESCS[String(p.number)]||"")+"</p>"
+    + "<button class='btn small ghost' id='map-clear-post'>Clear</button></div>";
+  const cb = box.querySelector("#map-clear-post");
+  if(cb) cb.addEventListener("click",()=>{ mapSelPost = null; refreshMapHighlights(); drawMapPostInfo(el); });
+}
+function syncTrailRows(el){
+  const host = el ? el : document;
+  host.querySelectorAll("[data-trail]").forEach(row=>{
+    row.classList.toggle("sel", mapSelTrail===row.dataset.trail);
   });
-  const hp = mapXY(MAP_HOME.lat, MAP_HOME.lng);
-  const homeSvg = "<g><path d='M0,-10 L8,8 L-8,8 Z' transform='translate("+hp.x.toFixed(1)+","+hp.y.toFixed(1)+")' fill='#a67f92' stroke='#3a2a1a' stroke-width='1'/><text x='"+(hp.x+11).toFixed(1)+"' y='"+(hp.y+4).toFixed(1)+"' fill='#3a2a1a' font-size='11' font-weight='700'>Start: Home</text></g>";
-  let marshLabel = "";
-  const marshTrail = MAP_TRAILS.find(x=>x.key==="marsh");
-  if(marshTrail){
-    const pts = marshTrail.posts.map(postXY).filter(Boolean);
-    if(pts.length){
-      const cx = pts.reduce((a,p)=>a+p.x,0)/pts.length;
-      const cy = pts.reduce((a,p)=>a+p.y,0)/pts.length + 30;
-      marshLabel = "<text x='"+cx.toFixed(1)+"' y='"+cy.toFixed(1)+"' fill='#5f7040' font-size='13' font-style='italic' text-anchor='middle' style='paint-order:stroke' stroke='#f7efdd' stroke-width='3'>Coats Marsh</text>";
-    }
-  }
-  let postsSvg = "";
-  MAP_POSTS.forEach(p=>{
-    const pt = mapXY(p.lat,p.lng);
-    const sel = mapSelPost===p.number;
-    postsSvg += "<g class='map-post' data-post='"+p.number+"'>"
-      + "<circle cx='"+pt.x.toFixed(1)+"' cy='"+pt.y.toFixed(1)+"' r='11' fill='transparent'/>"
-      + "<circle cx='"+pt.x.toFixed(1)+"' cy='"+pt.y.toFixed(1)+"' r='"+(sel?7:5.5)+"' fill='"+(sel?"#c05a2e":"#f7efdd")+"' stroke='#3a2a1a' stroke-width='1'/>"
-      + "<text x='"+pt.x.toFixed(1)+"' y='"+(pt.y+2.6).toFixed(1)+"' fill='#3a2a1a' font-size='7.5' font-weight='700' text-anchor='middle'>"+p.number+"</text></g>";
-    if(p.label){
-      postsSvg += "<text x='"+(pt.x+8).toFixed(1)+"' y='"+(pt.y+3).toFixed(1)+"' fill='#4a3826' font-size='8' style='paint-order:stroke' stroke='#f7efdd' stroke-width='2.5'>"+esc(p.label)+"</text>";
-    }
-  });
-  let spotsSvg = "";
+}
+function drawArmNote(el){
+  const n = el ? el.querySelector("#map-arm-note") : document.querySelector("#map-arm-note");
+  if(!n) return;
+  if(!mapArmSpot){ n.textContent = ""; return; }
+  const s = state.spots.find(x=>x.id===mapArmSpot);
+  n.textContent = s ? "Tap the map to place “"+s.name+"”." : "";
+}
+function drawMapSpots(map){
+  mapSpotMarkers.forEach(m=>{ try{ m.remove(); }catch(e){} });
+  mapSpotMarkers = [];
+  if(!map) return;
   state.spots.forEach(s=>{
-    let pt = null;
-    if(s.lat!=null) pt = mapXY(s.lat,s.lng);
-    if(!pt) return;
-    spotsSvg += "<g><circle cx='"+pt.x.toFixed(1)+"' cy='"+pt.y.toFixed(1)+"' r='9' fill='none' stroke='#b08d57' stroke-width='2'/><circle cx='"+pt.x.toFixed(1)+"' cy='"+pt.y.toFixed(1)+"' r='3.5' fill='#b08d57'/><text x='"+(pt.x+11).toFixed(1)+"' y='"+(pt.y+4).toFixed(1)+"' fill='#3a2a1a' font-size='10' style='paint-order:stroke' stroke='#f7efdd' stroke-width='3'>"+esc(s.name)+"</text></g>";
+    if(s.lat==null || s.lng==null) return;
+    const mEl = document.createElement("div");
+    mEl.style.pointerEvents = "none";
+    mEl.innerHTML = "<span style='display:inline-block;width:7px;height:7px;border-radius:50%;background:#b08d57;box-shadow:0 0 0 2px #f7efdd,0 0 0 3.5px #b08d57;vertical-align:middle'></span><span style='font-size:10px;color:#3a2a1a;text-shadow:0 0 3px #f7efdd,0 0 3px #f7efdd,0 0 3px #f7efdd;margin-left:3px;vertical-align:middle'>"+esc(s.name)+"</span>";
+    const m = new maplibregl.Marker({ element: mEl }).setLngLat([s.lng, s.lat]).addTo(map);
+    mapSpotMarkers.push(m);
   });
-  let detailHtml = "";
-  if(mapSelPost!=null){
-    const p = MAP_POSTS_BY_NUM[mapSelPost];
-    const ent = MAP_ENTRANCES.find(e=>e.post===mapSelPost);
-    detailHtml = "<div class='panel'><h3>Post "+p.number+(p.label?" — "+esc(p.label):"")+"</h3>"
-      + "<p>"+esc(MAP_DESCS[String(p.number)]||"")+"</p>"
-      + (ent? "<p class='meta'>Entrance "+esc(ent.code)+" — "+esc(ent.name)+" · "+esc(ent.coords_printed)+(ent.doe_asterisk?" · * Doe's mark, as printed":"")+"</p>" : "")
-      + "<button class='btn small ghost' id='map-clear-post'>Clear</button></div>";
-  }
-  let armHtml = "";
-  if(mapArmSpot){
-    const s = state.spots.find(x=>x.id===mapArmSpot);
-    if(s) armHtml = "<p class='map-note'>Tap the map to place “"+esc(s.name)+"”.</p>";
-  }
-  function routeItem(r){
-    const sel = mapSelRoute===r.id;
-    return "<div class='item route-item"+(sel?" sel":"")+"' data-route='"+r.id+"'><b>"+esc(r.badge)+" — "+esc(r.name)+"</b><div class='meta'>"+esc(r.meta)+"</div><div>"+esc(r.desc)+"</div><div class='meta'>Posts: "+r.seq.join(" · ")+"</div>"
-      + (sel? "<p><b>Return:</b> "+esc(r.ret)+"</p><button class='btn small ghost' data-route-clear>Clear highlight</button>" : "")
-      + "</div>";
-  }
-  el.innerHTML = viewHead(t, "The 707 Community Park with Coats Marsh — posts and trails from the surveyed positions. Tap a post for its description; tap a route to highlight it.")
-    + detailHtml
-    + "<svg id='map-svg' viewBox='0 0 720 700' style='width:100%;background:#e9dcc0;border:1px solid var(--line);border-radius:14px' role='img' aria-label='Map of the 707 Community Park with numbered posts'>"
-    + "<rect x='0' y='0' width='720' height='700' fill='#efe4c8'/>"
-    + trailsSvg + routeSvg + entSvg + homeSvg + marshLabel + postsSvg + spotsSvg
-    + "</svg>"
-    + "<p class='map-note'>Trail lines connect surveyed posts — not survey lines, not for navigation.</p>"
-    + "<p class='small'>Squares are entrances; the plum triangle is home. Posts and trails from Nick Doe's 707 survey (Oct 2020), via the Roamstead Quest app.</p>"
-    + armHtml
-    + "<div class='panel'><h3>Loops</h3><div id='map-routes'>"
-    + MAP_ROUTES.map(routeItem).join("")
-    + "</div><h3>Alternatives</h3>"
-    + MAP_ALT_ROUTES.map(routeItem).join("")
-    + "</div>"
-    + "<div class='panel'><h3>Entrances</h3>"
-    + MAP_ENTRANCES.map(e=>"<div class='item' data-ent-post='"+e.post+"'><b>"+esc(e.name)+"</b> <span class='meta'>"+esc(e.code)+" · Post "+e.post+" · "+esc(e.coords_printed)+(e.doe_asterisk?" · *":"")+"</span></div>").join("")
-    + "<p class='small'>* Doe's own mark, as printed.</p></div>"
-    + "<div class='panel'><h3>Spots</h3><div id='map-spots'></div>"
-    + "<p class='small'>Tap the map to drop a pin, then name it here. A spot placed on the old sketch needs placing again — tap “Place on map” under it, then tap the map.</p>"
-    + "<label>Name</label><input type='text' id='spot-name' placeholder='e.g. The mossy log'>"
-    + "<label>Note</label><input type='text' id='spot-note' placeholder='What is here?'>"
-    + "<button class='btn' id='spot-add'>Add spot</button></div>";
-  const svg = el.querySelector("#map-svg");
-  svg.addEventListener("click",e=>{
-    const postG = e.target.closest ? e.target.closest(".map-post") : null;
-    if(postG){
-      mapSelPost = +postG.dataset.post;
-      mapSelRoute = null;
-      renderView("map");
-      return;
-    }
-    const r = svg.getBoundingClientRect();
-    const x = Math.round((e.clientX-r.left)/r.width*MAP_W);
-    const y = Math.round((e.clientY-r.top)/r.height*MAP_H);
-    const ll = mapLatLng(x,y);
-    if(mapArmSpot){
-      const s = state.spots.find(sp=>sp.id===mapArmSpot);
-      if(s){ s.lat = ll.lat; s.lng = ll.lng; s.x = x; s.y = y; }
-      mapArmSpot = null;
-      save(); renderView("map"); renderHome();
-      return;
-    }
-    mapPending = {x:x, y:y, lat:ll.lat, lng:ll.lng};
-    const nameInput = el.querySelector("#spot-name");
-    if(nameInput) nameInput.focus();
-  });
-  const clearBtn = el.querySelector("#map-clear-post");
-  if(clearBtn) clearBtn.addEventListener("click",()=>{ mapSelPost = null; renderView("map"); });
-  el.querySelectorAll("[data-route]").forEach(item=>item.addEventListener("click",ev=>{
-    if(ev.target.closest("[data-route-clear]")) return;
-    mapSelRoute = (mapSelRoute===item.dataset.route) ? null : item.dataset.route;
-    if(mapSelRoute) mapSelPost = null;
-    renderView("map");
-  }));
-  el.querySelectorAll("[data-route-clear]").forEach(b=>b.addEventListener("click",ev=>{
-    ev.stopPropagation();
-    mapSelRoute = null; renderView("map");
-  }));
-  el.querySelectorAll("[data-ent-post]").forEach(item=>item.addEventListener("click",()=>{
-    mapSelPost = +item.dataset.entPost;
-    mapSelRoute = null;
-    renderView("map");
-    window.scrollTo(0,0);
-  }));
+}
+function drawSpotsList(el){
   const list = el.querySelector("#map-spots");
+  if(!list) return;
   list.innerHTML = state.spots.map(s=>{
     let h = "<div class='item'><b>"+esc(s.name)+"</b>"+(s.note?"<div>"+esc(s.note)+"</div>":"");
     if(s.lat!=null) h += "<div class='meta'>"+s.lat.toFixed(5)+", "+s.lng.toFixed(5)+"</div>";
@@ -3122,16 +3063,171 @@ VIEW_RENDER.map = function(el){
     h += "<div><button class='btn small danger' data-del-spot='"+s.id+"'>Delete</button></div></div>";
     return h;
   }).join("");
-  list.querySelectorAll("[data-del-spot]").forEach(b=>b.addEventListener("click",()=>{ state.spots = state.spots.filter(s=>s.id!==b.dataset.delSpot); save(); renderView("map"); renderHome(); }));
-  list.querySelectorAll("[data-place-spot]").forEach(b=>b.addEventListener("click",()=>{ mapArmSpot = b.dataset.placeSpot; renderView("map"); }));
+  list.querySelectorAll("[data-del-spot]").forEach(b=>b.addEventListener("click",()=>{
+    state.spots = state.spots.filter(s=>s.id!==b.dataset.delSpot);
+    saveNow(); drawSpotsList(el); drawMapSpots(jasmineMap); renderHome();
+  }));
+  list.querySelectorAll("[data-place-spot]").forEach(b=>b.addEventListener("click",()=>{
+    mapArmSpot = b.dataset.placeSpot; drawArmNote(el);
+  }));
+}
+function setLiveDot(pos){
+  if(!jasmineMap) return;
+  const src = jasmineMap.getSource("live-dot");
+  if(!src) return;
+  src.setData({ type: "FeatureCollection", features: [{ type: "Feature", properties: {}, geometry: { type: "Point", coordinates: [pos.lng, pos.lat] } }] });
+}
+function startLiveLocation(){
+  if(mapLiveWatch!=null) return;
+  if(typeof navigator==="undefined" || !("geolocation" in navigator)) return;
+  try{
+    mapLiveWatch = navigator.geolocation.watchPosition(
+      p=>{ mapLivePos = { lat: p.coords.latitude, lng: p.coords.longitude }; setLiveDot(mapLivePos); },
+      ()=>{ /* no fix: no dot, and no invented position */ },
+      { enableHighAccuracy: true, maximumAge: 30000, timeout: 15000 }
+    );
+  }catch(e){ /* geolocation unavailable on this device */ }
+}
+function selectMapPost(n, el){
+  mapSelPost = n; mapSelTrail = null;
+  refreshMapHighlights(); drawMapPostInfo(el); syncTrailRows(el);
+}
+function selectMapTrail(key, el){
+  mapSelTrail = (mapSelTrail===key) ? null : key;
+  if(mapSelTrail) mapSelPost = null;
+  refreshMapHighlights(); drawMapPostInfo(el); syncTrailRows(el);
+}
+function placeArmedSpot(lngLat, el){
+  const s = state.spots.find(sp=>sp.id===mapArmSpot);
+  if(s){ s.lat = lngLat.lat; s.lng = lngLat.lng; s.x = null; s.y = null; }
+  mapArmSpot = null;
+  saveNow(); drawSpotsList(el); drawMapSpots(jasmineMap); drawArmNote(el);
+}
+function initJasmineMap(el){
+  const host = el.querySelector("#jasmineMapEl");
+  if(!host) return;
+  window.jasmineMapReady = false;
+  if(typeof maplibregl==="undefined"){
+    host.innerHTML = "<p class='small'>The map library did not load — open the app once while online and it will be cached for offline use.</p>";
+    return;
+  }
+  let center = MAP_CENTER, zoom = MAP_ZOOM;
+  if(jasmineMap){
+    try{ center = jasmineMap.getCenter().toArray(); zoom = jasmineMap.getZoom(); }catch(e){}
+    try{ jasmineMap.remove(); }catch(e){}
+    jasmineMap = null;
+  }
+  mapSpotMarkers = [];
+  const map = new maplibregl.Map({
+    container: host,
+    style: MAP_STYLE,
+    center: center,
+    zoom: zoom,
+    minZoom: 12,
+    maxZoom: 16,
+    maxBounds: MAP_BOUNDS,
+    attributionControl: true
+  });
+  jasmineMap = map;
+  window.jasmineMap = map;
+  map.on("load", ()=>{
+    map.addSource("park-posts", { type: "geojson", data: mapPostsGeoJSON() });
+    map.addLayer({
+      id: "park-posts", type: "circle", source: "park-posts",
+      paint: {
+        "circle-radius": 11,
+        "circle-color": mapPostColour(),
+        "circle-stroke-color": MAP_GOLD,
+        "circle-stroke-width": 1.5
+      }
+    });
+    map.addLayer({
+      id: "park-post-labels", type: "symbol", source: "park-posts",
+      layout: {
+        "text-field": ["to-string", ["get", "number"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 11,
+        "text-anchor": "center"
+      },
+      paint: { "text-color": MAP_LABEL_COLOUR }
+    });
+    map.addSource("live-dot", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+    map.addLayer({
+      id: "live-dot", type: "circle", source: "live-dot",
+      paint: { "circle-radius": 8, "circle-color": "#2f7fe0", "circle-stroke-color": "#ffffff", "circle-stroke-width": 2 }
+    });
+    new maplibregl.Marker({ color: MAP_GOLD }).setLngLat([MAP_HOME.lng, MAP_HOME.lat]).addTo(map);
+    drawMapSpots(map);
+    if(mapLivePos) setLiveDot(mapLivePos);
+    window.jasmineMapReady = true;
+    map.resize();
+  });
+  map.on("click", (e)=>{
+    const feats = map.queryRenderedFeatures(e.point, { layers: ["park-posts"] });
+    if(feats && feats.length){
+      selectMapPost(feats[0].properties.number, el);
+      return;
+    }
+    if(mapArmSpot){
+      placeArmedSpot(e.lngLat, el);
+      return;
+    }
+    mapSelPost = null; mapPending = { lat: e.lngLat.lat, lng: e.lngLat.lng };
+    refreshMapHighlights(); drawMapPostInfo(el);
+    const nameInput = el.querySelector("#spot-name");
+    if(nameInput) nameInput.focus();
+  });
+  startLiveLocation();
+}
+VIEW_RENDER.map = function(el){
+  const t = viewMeta("map");
+  el.innerHTML = viewHead(t, "The 707 Community Park with Coats Marsh — posts and trails from the surveyed positions. Tap a post for its description; tap a trail to light its posts gold.")
+    + "<div id='map-post-info'></div>"
+    + "<div id='jasmineMapEl' style='height:380px;border:1px solid var(--line);border-radius:14px;overflow:hidden'></div>"
+    + "<p class='map-note'>Post positions are the surveyed ones — trail lines are not drawn, and are not for navigation.</p>"
+    + "<p class='small'>The gold pin is home. Posts and trails from Nick Doe's 707 survey (Oct 2020), via the Roamstead Quest app.</p>"
+    + "<button class='btn small' id='map-locate'>Locate me</button>"
+    + "<p class='map-note' id='map-arm-note'></p>"
+    + "<details class='panel' id='map-trails'><summary><b>Trails</b> <span class='meta'>— tap one to light its posts gold</span></summary>"
+    + MAP_TRAILS.map(tr=>"<div class='item route-item"+(mapSelTrail===tr.key?" sel":"")+"' data-trail='"+tr.key+"'><b>"+esc(tr.name)+"</b><div class='meta'>"+esc(tr.runs)+" · "+tr.posts.length+" posts</div></div>").join("")
+    + "</details>"
+    + "<div class='panel'><h3>Spots</h3><div id='map-spots'></div>"
+    + "<p class='small'>Tap the map to drop a pin, then name it here. A spot placed on the old sketch needs placing again — tap “Place on map” under it, then tap the map.</p>"
+    + "<label>Name</label><input type='text' id='spot-name' placeholder='e.g. The mossy log'>"
+    + "<label>Note</label><input type='text' id='spot-note' placeholder='What is here?'>"
+    + "<button class='btn' id='spot-add'>Add spot</button></div>";
+  drawMapPostInfo(el);
+  drawSpotsList(el);
+  drawArmNote(el);
+  el.querySelectorAll("[data-trail]").forEach(row=>row.addEventListener("click",()=>{
+    selectMapTrail(row.dataset.trail, el);
+  }));
+  el.querySelector("#map-locate").addEventListener("click",()=>{
+    if(!jasmineMap) return;
+    if(mapLivePos){
+      jasmineMap.flyTo({ center: [mapLivePos.lng, mapLivePos.lat], zoom: Math.max(jasmineMap.getZoom(), 15) });
+      return;
+    }
+    if(typeof navigator!=="undefined" && ("geolocation" in navigator)){
+      navigator.geolocation.getCurrentPosition(p=>{
+        mapLivePos = { lat: p.coords.latitude, lng: p.coords.longitude };
+        setLiveDot(mapLivePos);
+        jasmineMap.flyTo({ center: [mapLivePos.lng, mapLivePos.lat], zoom: Math.max(jasmineMap.getZoom(), 15) });
+      }, ()=>{}, { enableHighAccuracy: true, timeout: 15000 });
+    }
+  });
   el.querySelector("#spot-add").addEventListener("click",()=>{
     const name = el.querySelector("#spot-name").value.trim(); if(!name) return;
     let spot;
-    if(mapPending) spot = {id:uid(), name:name, note:el.querySelector("#spot-note").value.trim(), x:mapPending.x, y:mapPending.y, lat:mapPending.lat, lng:mapPending.lng};
-    else { const c = mapLatLng(MAP_W/2, MAP_H/2); spot = {id:uid(), name:name, note:el.querySelector("#spot-note").value.trim(), x:MAP_W/2, y:MAP_H/2, lat:c.lat, lng:c.lng}; }
+    if(mapPending) spot = { id: uid(), name: name, note: el.querySelector("#spot-note").value.trim(), x: null, y: null, lat: mapPending.lat, lng: mapPending.lng };
+    else {
+      const c = jasmineMap ? jasmineMap.getCenter() : { lat: MAP_HOME.lat, lng: MAP_HOME.lng };
+      spot = { id: uid(), name: name, note: el.querySelector("#spot-note").value.trim(), x: null, y: null, lat: c.lat, lng: c.lng };
+    }
     state.spots.push(spot);
-    mapPending = null; save(); renderView("map"); renderHome();
+    mapPending = null; saveNow(); drawSpotsList(el); drawMapSpots(jasmineMap); renderHome();
   });
+  initJasmineMap(el);
 };
 
 /* ---- Compass ---- */
