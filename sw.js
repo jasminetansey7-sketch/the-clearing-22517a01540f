@@ -1,6 +1,6 @@
 // The Clearing — service worker, v2.3.32: document is network-first (updates land on the first open after a push); assets stay stale-while-revalidate.
 // Cache name MUST change with every app version.
-const CACHE = "clearing-v2.3.50";
+const CACHE = "clearing-v2.3.51";
 const SHELL = [
   "./",
   "index.html",
