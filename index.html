@@ -9,7 +9,7 @@
 <link href="maplibre/maplibre-gl.css" rel="stylesheet">
 <script src="maplibre/maplibre-gl.js"></script>
 <!--
-  The Clearing — Jasmine's personal app, v2.3.52 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination, Diary, Focus; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day. v2.3.41: the Focus view gains a History tab — finished and removed tasks are saved by day instead of disappearing; a not-done one can be brought back to Today's list. v2.3.42: the Mythology section gains a Creatures sub-tab — 13 creatures in Local and General sections, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on a creature page restores it. v2.3.43: the Divination & Guides section gains an Animal Medicine tab — 14 animals in Jasmine's order, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on an animal page restores it. v2.3.44: the duplicate 'current' pill in the Saju luck-pillars timeline is dropped at Jasmine's ask — the 乙巳 chapter keeps its highlight and its 'current (changed 22 April 2026)' wording. v2.3.44 also fixes the Mantra save: adding or deleting a mantra now saves immediately (saveNow), so it is never lost if the app is closed quickly. v2.3.45: the deity, creature, and animal lists are now alphabetical — the Pantheon and Animal Medicine in A-to-Z order, the Creatures kept in their Local and General sections, alphabetical within each. v2.3.46: the 707 Map is rebuilt on MapLibre with the offline tile set — the surveyed posts as tappable dots with their numbers, trails that light their posts gold (no lines drawn), the gold home pin, and a live-location dot; it works fully offline after the first load. The Loops, Alternatives, and Entrances lists from the old sketch map are gone with it. v2.3.47: the Animal Medicine Raven entry is reframed to the Norse telling — Odin's ravens Huginn and Muninn — with the new square portrait, and the Coast Salish telling moves to the Raven Log; tapping the map no longer yanks you down to the Spots box, and tapping a trail or a post no longer snaps the page. v2.3.48: tapping a trail now moves the map to frame that trail, so its gold posts are on screen; tapping the trail again to clear it leaves the map where it is. No trail lines are drawn. v2.3.49: Walk to a post — tap a post, tap Walk here, and the app guides you post to post along the trails from where you are, with the direction, the distance, and an estimated time; the destination and the next post stay gold, and the map follows you. No trail lines are drawn. v2.3.50: Tarot leaves the Astrology folder — it already lives in Divination & Guides, so Astrology is now Saju, Birth Charts, Numerology; a saved state pointing at Astrology's Tarot tab opens Saju instead. v2.3.51: Astrology gains Western and Vedic tabs — her whole-sign Western chart and her Vedic chart as study pages in the Saju style, drawn from Birth Charts; Birth Charts becomes a quick-reference sheet — two placements tables (with Chiron), the aspects the source names, stelliums, a Worth-noticing list, five numerology numbers, and the Day Master line. v2.3.52: the Weather view's Today banner becomes a rich current-conditions panel — current temperature, feels like, wind with gusts and direction, humidity, dew point, visibility, UV index, barometer (pressure_msl) with a 3-hour trend, an hourly temperature curve, and rain/wind/humidity rings, all from one Open-Meteo call; the days ahead are unchanged.
+  The Clearing — Jasmine's personal app, v2.3.53 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination, Diary, Focus; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day. v2.3.41: the Focus view gains a History tab — finished and removed tasks are saved by day instead of disappearing; a not-done one can be brought back to Today's list. v2.3.42: the Mythology section gains a Creatures sub-tab — 13 creatures in Local and General sections, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on a creature page restores it. v2.3.43: the Divination & Guides section gains an Animal Medicine tab — 14 animals in Jasmine's order, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on an animal page restores it. v2.3.44: the duplicate 'current' pill in the Saju luck-pillars timeline is dropped at Jasmine's ask — the 乙巳 chapter keeps its highlight and its 'current (changed 22 April 2026)' wording. v2.3.44 also fixes the Mantra save: adding or deleting a mantra now saves immediately (saveNow), so it is never lost if the app is closed quickly. v2.3.45: the deity, creature, and animal lists are now alphabetical — the Pantheon and Animal Medicine in A-to-Z order, the Creatures kept in their Local and General sections, alphabetical within each. v2.3.46: the 707 Map is rebuilt on MapLibre with the offline tile set — the surveyed posts as tappable dots with their numbers, trails that light their posts gold (no lines drawn), the gold home pin, and a live-location dot; it works fully offline after the first load. The Loops, Alternatives, and Entrances lists from the old sketch map are gone with it. v2.3.47: the Animal Medicine Raven entry is reframed to the Norse telling — Odin's ravens Huginn and Muninn — with the new square portrait, and the Coast Salish telling moves to the Raven Log; tapping the map no longer yanks you down to the Spots box, and tapping a trail or a post no longer snaps the page. v2.3.48: tapping a trail now moves the map to frame that trail, so its gold posts are on screen; tapping the trail again to clear it leaves the map where it is. No trail lines are drawn. v2.3.49: Walk to a post — tap a post, tap Walk here, and the app guides you post to post along the trails from where you are, with the direction, the distance, and an estimated time; the destination and the next post stay gold, and the map follows you. No trail lines are drawn. v2.3.50: Tarot leaves the Astrology folder — it already lives in Divination & Guides, so Astrology is now Saju, Birth Charts, Numerology; a saved state pointing at Astrology's Tarot tab opens Saju instead. v2.3.51: Astrology gains Western and Vedic tabs — her whole-sign Western chart and her Vedic chart as study pages in the Saju style, drawn from Birth Charts; Birth Charts becomes a quick-reference sheet — two placements tables (with Chiron), the aspects the source names, stelliums, a Worth-noticing list, five numerology numbers, and the Day Master line. v2.3.52: the Weather view's Today banner becomes a rich current-conditions panel — current temperature, feels like, wind with gusts and direction, humidity, dew point, visibility, UV index, barometer (pressure_msl) with a 3-hour trend, an hourly temperature curve, and rain/wind/humidity rings, all from one Open-Meteo call; the days ahead are unchanged. v2.3.53: the Western, Vedic, and Birth Charts tabs are reworked — Western's placement cards gain planet and sign glyphs with element-coloured edges and the Chart facts move to the top as At a glance; Vedic gains per-planet placement cards with nakshatras and dignities, a Jupiter Mahadasha timeline with the current sub-period marked, and keeps the four notes; Birth Charts tables keep sign, degree, and house on one line with sign glyphs, and Worth noticing is grouped under small sub-headings. No placements or readings changed.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -333,6 +333,24 @@ button:active,.tile:active,.ftab:active,.item:active,.swatch:active,.t-move:acti
 .route-item{cursor:pointer}
 .route-item.sel{border-color:#b08d57}
 .map-note{font-weight:700}
+
+/* Chart tabs rework — placement cards carry planet + sign glyphs
+   and an element-coloured left edge (Fire Brick, Earth Moss, Air Teal,
+   Water Plum — the tile-palette accents); Birth Charts tables keep sign,
+   degree and house on one line; Worth noticing groups under small heads. */
+.place.ce-fire{border-left:5px solid #c78a66}
+.place.ce-earth{border-left:5px solid #8d966b}
+.place.ce-air{border-left:5px solid #6f9a90}
+.place.ce-water{border-left:5px solid #6b4f70}
+.chart-panel{padding:18px 12px}
+.chart-rows{font-size:12.5px}
+.chart-rows .row{display:flex; gap:8px; white-space:nowrap; align-items:baseline; padding:2px 0}
+.chart-rows .row b{color:#8a5f28; flex:none}
+.chart-rows .row span{flex:none}
+.wn-sub{font-size:13px; font-weight:700; color:#8a5f28; letter-spacing:.04em; margin:14px 0 2px}
+.panel h3 + .wn-sub{margin-top:2px}
+.dasha-row{padding:6px 10px; border-left:4px solid transparent; margin:2px 0}
+.dasha-row.now{border-left-color:#b08d57; background:#f7ecd4; font-weight:700}
 </style>
 </head>
 <body>
@@ -1865,31 +1883,31 @@ VIEW_RENDER.saju = function(el){
 /* ---- Birth charts ---- */
 VIEW_RENDER.charts = function(el){
   el.innerHTML = viewHead(viewMeta("charts"), "Your birth sky, as it was verified — born 17 September 1992, 9:07 PM, Nanaimo, BC.")
-    + "<div class='panel'><h3>Western — whole-sign houses</h3><div class='kv'>"
-    + "<b>Ascendant</b><span>Taurus · 18°55′ · 1st house</span>"
-    + "<b>Sun</b><span>Virgo · 25°29′ · 5th house</span>"
-    + "<b>Moon</b><span>Gemini · 05°06′ · 2nd house</span>"
-    + "<b>Mercury</b><span>Virgo · 28°04′ · 5th house</span>"
-    + "<b>Venus</b><span>Libra · 21°27′ · 6th house</span>"
-    + "<b>Mars</b><span>Cancer · 03°19′ · 3rd house</span>"
-    + "<b>Jupiter</b><span>Virgo · 25°11′ · 5th house</span>"
-    + "<b>Saturn</b><span>Aquarius · 12°27′ · 10th house</span>"
-    + "<b>Uranus</b><span>Capricorn · 14°03′ · 9th house</span>"
-    + "<b>Neptune</b><span>Capricorn · 16°12′ · 9th house</span>"
-    + "<b>Pluto</b><span>Scorpio · 20°49′ · 7th house</span>"
-    + "<b>Chiron</b><span>Leo · 18°35′ · 4th house</span>"
-    + "<b>North Node</b><span>Sagittarius · 25°58′ · 8th house</span>"
+    + "<div class='panel chart-panel'><h3>Western — whole-sign houses</h3><div class='chart-rows'>"
+    + "<div class='row'><b>Ascendant</b><span>♉ Taurus · 18°55′ · 1st house</span></div>"
+    + "<div class='row'><b>Sun</b><span>♍ Virgo · 25°29′ · 5th house</span></div>"
+    + "<div class='row'><b>Moon</b><span>♊ Gemini · 05°06′ · 2nd house</span></div>"
+    + "<div class='row'><b>Mercury</b><span>♍ Virgo · 28°04′ · 5th house</span></div>"
+    + "<div class='row'><b>Venus</b><span>♎ Libra · 21°27′ · 6th house</span></div>"
+    + "<div class='row'><b>Mars</b><span>♋ Cancer · 03°19′ · 3rd house</span></div>"
+    + "<div class='row'><b>Jupiter</b><span>♍ Virgo · 25°11′ · 5th house</span></div>"
+    + "<div class='row'><b>Saturn</b><span>♒ Aquarius · 12°27′ · 10th house</span></div>"
+    + "<div class='row'><b>Uranus</b><span>♑ Capricorn · 14°03′ · 9th house</span></div>"
+    + "<div class='row'><b>Neptune</b><span>♑ Capricorn · 16°12′ · 9th house</span></div>"
+    + "<div class='row'><b>Pluto</b><span>♏ Scorpio · 20°49′ · 7th house</span></div>"
+    + "<div class='row'><b>Chiron</b><span>♌ Leo · 18°35′ · 4th house</span></div>"
+    + "<div class='row'><b>North Node</b><span>♐ Sagittarius · 25°58′ · 8th house</span></div>"
     + "</div></div>"
-    + "<div class='panel'><h3>Vedic (Lahiri)</h3><div class='kv'>"
-    + "<b>Ascendant</b><span>Aries · 25°10′ · Bharani-4 · 1st house</span>"
-    + "<b>Moon</b><span>Taurus · 11°21′ · Rohini-1 · 2nd house</span>"
-    + "<b>Sun</b><span>Virgo · 1°44′ · 6th house</span>"
-    + "<b>Mercury</b><span>Virgo · 4°19′ · 6th house</span>"
-    + "<b>Venus</b><span>Virgo · 27°42′ · 6th house</span>"
-    + "<b>Mars</b><span>Gemini · 9°33′ · 3rd house</span>"
-    + "<b>Jupiter</b><span>Virgo · 1°25′ · 6th house</span>"
-    + "<b>Saturn</b><span>Capricorn · 18°41′ · 10th house</span>"
-    + "<b>Rahu</b><span>Sagittarius · 2°12′ · Mula-1 · 9th house</span>"
+    + "<div class='panel chart-panel'><h3>Vedic (Lahiri)</h3><div class='chart-rows'>"
+    + "<div class='row'><b>Ascendant</b><span>♈ Aries · 25°10′ · Bharani-4 · 1st house</span></div>"
+    + "<div class='row'><b>Moon</b><span>♉ Taurus · 11°21′ · Rohini-1 · 2nd house</span></div>"
+    + "<div class='row'><b>Sun</b><span>♍ Virgo · 1°44′ · 6th house</span></div>"
+    + "<div class='row'><b>Mercury</b><span>♍ Virgo · 4°19′ · 6th house</span></div>"
+    + "<div class='row'><b>Venus</b><span>♍ Virgo · 27°42′ · 6th house</span></div>"
+    + "<div class='row'><b>Mars</b><span>♊ Gemini · 9°33′ · 3rd house</span></div>"
+    + "<div class='row'><b>Jupiter</b><span>♍ Virgo · 1°25′ · 6th house</span></div>"
+    + "<div class='row'><b>Saturn</b><span>♑ Capricorn · 18°41′ · 10th house</span></div>"
+    + "<div class='row'><b>Rahu</b><span>♐ Sagittarius · 2°12′ · Mula-1 · 9th house</span></div>"
     + "</div></div>"
     + "<div class='panel'><h3>Aspects</h3>"
     + "<p><b>Sun conjunct Jupiter</b> — orb 18′</p>"
@@ -1901,17 +1919,21 @@ VIEW_RENDER.charts = function(el){
     + "<p>Vedic: Virgo stellium, 6th house — Sun, Mercury, Jupiter, Venus.</p>"
     + "</div>"
     + "<div class='panel'><h3>Worth noticing</h3>"
+    + "<div class='wn-sub'>The chart's shape</div>"
     + "<p>Sun conjunct Jupiter, 0.30° orb — very tight.</p>"
     + "<p>The Virgo stellium squares the Nodes.</p>"
     + "<p>12th house (Aries) is empty of natal planets.</p>"
+    + "<p>Born Thursday, Jupiter's day; waning gibbous Moon at birth.</p>"
+    + "<div class='wn-sub'>Saju</div>"
     + "<p>Saju: no Wood at all (Wood 0); Yang 6 / Yin 2.</p>"
     + "<p>Fu yin: 申 repeats as the year and day branch.</p>"
     + "<p>Complete Western Metal combination (서방금국).</p>"
     + "<p>No Kongwang (empty branches).</p>"
     + "<p>Day master weak but rooted — faint 丁火 hidden in 戌.</p>"
-    + "<p>Born Thursday, Jupiter's day; waning gibbous Moon at birth.</p>"
+    + "<div class='wn-sub'>Vedic</div>"
     + "<p>Jupiter Mahadasha from Sep 12, 2026 (Rahu period ended).</p>"
     + "<p>Vedic: Moon exalted in Taurus, 2nd house; Venus debilitated in Virgo, 6th house, ruling the 7th; Saturn in its own sign, Capricorn, 10th house.</p>"
+    + "<div class='wn-sub'>Dignities</div>"
     + "<p>Dignities: Venus domiciled in Libra 6th; Saturn domiciled in Aquarius 10th; Pluto domiciled in Scorpio 7th; Mars in fall in Cancer 3rd.</p>"
     + "</div>"
     + "<div class='panel'><h3>Numerology</h3><div class='kv'>"
@@ -1920,7 +1942,7 @@ VIEW_RENDER.charts = function(el){
     + "<b>Expression</b><span>8</span>"
     + "<b>Soul Urge</b><span>5</span>"
     + "<b>Personality</b><span>3</span>"
-    + "</div></div>"
+    + "</div>"
     + "<div class='panel'><h3>Day Master</h3><p>Day Master: Bing Fire (丙) — Yang Fire</p></div>";
 };
 /* ---- Western chart ---- */
@@ -1930,25 +1952,25 @@ VIEW_RENDER.charts = function(el){
    house, the day and Moon phase at birth). */
 VIEW_RENDER.western = function(el){
   el.innerHTML = viewHead(viewMeta("western"), "Your Western natal chart — whole-sign houses, the sky as it was when you were born, 17 September 1992, 9:07 PM, Nanaimo, BC.")
-    + "<div class='panel'><h3>Western — whole-sign houses</h3>"
-    + "<div class='place'><div class='meta'>Sun · 25°29′ Virgo · 5th house</div><p>Sun in Virgo, 5th house, conjunct Jupiter — your core and your growth in the same degree, only 18' apart. Identity through craft, precision, and making something real; the 5th makes it creative and joyful at root, not dutiful. This is the center of your chart.</p></div>"
-    + "<div class='place'><div class='meta'>Mercury · 28°04′ Virgo · 5th house</div><p>Mercury in Virgo, 5th — domicile and exaltation. A sharp, exact mind that loves systems and detail, sitting right with the Sun and Jupiter — your thinking is your creative instrument.</p></div>"
-    + "<div class='place'><div class='meta'>Jupiter · 25°11′ Virgo · 5th house</div><p>Jupiter in Virgo, 5th — the same conjunction from the other side: expansion through teaching, practice, and creative spiritual work. Small, exact, and generous all at once.</p></div>"
-    + "<div class='place'><div class='meta'>Moon · 05°06′ Gemini · 2nd house</div><p>Moon in Gemini, 2nd house — feelings that move, notice, and need words and variety. In the 2nd it ties straight to worth and resources: how you feel about what you have, and what you value.</p></div>"
-    + "<div class='place'><div class='meta'>Venus · 21°27′ Libra · 6th house</div><p>Venus in Libra, 6th house — domicile. Love shown in daily devotion and care, not grand gestures. The 6th is work, routine, health — love as tending, as showing up properly.</p></div>"
-    + "<div class='place'><div class='meta'>Mars · 03°19′ Cancer · 3rd house</div><p>Mars in Cancer, 3rd house — in fall, so it doesn't charge head-on. Action through feeling and protection; words carry the heat. In the 3rd, speech is where it lands.</p></div>"
-    + "<div class='place'><div class='meta'>Saturn · 12°27′ Aquarius · 10th house · retrograde</div><p>Saturn in Aquarius, 10th house, retrograde — domicile. Authority built slowly and on your own terms, turned inward first. The 10th is public standing — your self-employed path, not a conventional ladder.</p></div>"
-    + "<div class='place'><div class='meta'>Uranus · 14°03′ Capricorn · 9th house · retrograde · conjunct Neptune 16°12′ Capricorn</div><p>Uranus conjunct Neptune in Capricorn, 9th house — both retrograde, a generational pair. Belief and structure, questioned from the inside: an unconventional spirituality, a philosophy you built yourself rather than inherited.</p></div>"
-    + "<div class='place'><div class='meta'>Pluto · 20°49′ Scorpio · 7th house</div><p>Pluto in Scorpio, 7th house — domicile. Depth and power live in one-to-one bonds. Partnership is where transformation happens for you, for better or worse.</p></div>"
-    + "<div class='place'><div class='meta'>North Node · 25°58′ Sagittarius · 8th house</div><p>North Node in Sagittarius, 8th house — growth through deep trust, letting people in a little at a time, shared ground. South Node in Gemini in the 2nd is the old habit: keeping things separate and self-sufficient.</p></div>"
-    + "<p>Closing threads: the Virgo stellium squares your Nodes, so your precise, creative core pulls against that 2nd/8th axis of self-sufficiency versus trust. And at birth, Saturn, Uranus, and Neptune were all retrograde — the outer, slow work of the chart is inward-facing, reworked rather than taken as given.</p>"
-    + "</div>"
-    + "<div class='panel'><h3>Chart facts</h3><div class='kv'>"
+    + "<div class='panel'><h3>At a glance</h3><div class='kv'>"
     + "<b>Ascendant</b><span>Taurus · 18°55′ · 1st house</span>"
     + "<b>12th house</b><span>Aries, empty of planets</span>"
     + "<b>Born</b><span>Thursday, 17 September 1992</span>"
     + "<b>Moon at birth</b><span>Waning gibbous</span>"
-    + "</div></div>";
+    + "</div></div>"
+    + "<div class='panel'><h3>Western — whole-sign houses</h3>"
+    + "<div class='place ce-earth'><div class='meta'>☉ Sun · 25°29′ ♍ Virgo · 5th house</div><p>Sun in Virgo, 5th house, conjunct Jupiter — your core and your growth in the same degree, only 18' apart. Identity through craft, precision, and making something real; the 5th makes it creative and joyful at root, not dutiful. This is the center of your chart.</p></div>"
+    + "<div class='place ce-earth'><div class='meta'>☿ Mercury · 28°04′ ♍ Virgo · 5th house</div><p>Mercury in Virgo, 5th — domicile and exaltation. A sharp, exact mind that loves systems and detail, sitting right with the Sun and Jupiter — your thinking is your creative instrument.</p></div>"
+    + "<div class='place ce-earth'><div class='meta'>♃ Jupiter · 25°11′ ♍ Virgo · 5th house</div><p>Jupiter in Virgo, 5th — the same conjunction from the other side: expansion through teaching, practice, and creative spiritual work. Small, exact, and generous all at once.</p></div>"
+    + "<div class='place ce-air'><div class='meta'>☽ Moon · 05°06′ ♊ Gemini · 2nd house</div><p>Moon in Gemini, 2nd house — feelings that move, notice, and need words and variety. In the 2nd it ties straight to worth and resources: how you feel about what you have, and what you value.</p></div>"
+    + "<div class='place ce-air'><div class='meta'>♀ Venus · 21°27′ ♎ Libra · 6th house</div><p>Venus in Libra, 6th house — domicile. Love shown in daily devotion and care, not grand gestures. The 6th is work, routine, health — love as tending, as showing up properly.</p></div>"
+    + "<div class='place ce-water'><div class='meta'>♂ Mars · 03°19′ ♋ Cancer · 3rd house</div><p>Mars in Cancer, 3rd house — in fall, so it doesn't charge head-on. Action through feeling and protection; words carry the heat. In the 3rd, speech is where it lands.</p></div>"
+    + "<div class='place ce-air'><div class='meta'>♄ Saturn · 12°27′ ♒ Aquarius · 10th house · retrograde</div><p>Saturn in Aquarius, 10th house, retrograde — domicile. Authority built slowly and on your own terms, turned inward first. The 10th is public standing — your self-employed path, not a conventional ladder.</p></div>"
+    + "<div class='place ce-earth'><div class='meta'>♅ Uranus · 14°03′ ♑ Capricorn · 9th house · retrograde · conjunct Neptune 16°12′ Capricorn</div><p>Uranus conjunct Neptune in Capricorn, 9th house — both retrograde, a generational pair. Belief and structure, questioned from the inside: an unconventional spirituality, a philosophy you built yourself rather than inherited.</p></div>"
+    + "<div class='place ce-water'><div class='meta'>♇ Pluto · 20°49′ ♏ Scorpio · 7th house</div><p>Pluto in Scorpio, 7th house — domicile. Depth and power live in one-to-one bonds. Partnership is where transformation happens for you, for better or worse.</p></div>"
+    + "<div class='place ce-fire'><div class='meta'>☊ North Node · 25°58′ ♐ Sagittarius · 8th house</div><p>North Node in Sagittarius, 8th house — growth through deep trust, letting people in a little at a time, shared ground. South Node in Gemini in the 2nd is the old habit: keeping things separate and self-sufficient.</p></div>"
+    + "<p>Closing threads: the Virgo stellium squares your Nodes, so your precise, creative core pulls against that 2nd/8th axis of self-sufficiency versus trust. And at birth, Saturn, Uranus, and Neptune were all retrograde — the outer, slow work of the chart is inward-facing, reworked rather than taken as given.</p>"
+    + "</div>";
 };
 /* ---- Vedic chart ---- */
 /* Her Vedic chart as a study page: the descriptive notes, copied
@@ -1956,8 +1978,30 @@ VIEW_RENDER.western = function(el){
    in the Birth Charts table, not here. */
 VIEW_RENDER.vedic = function(el){
   el.innerHTML = viewHead(viewMeta("vedic"), "Your Vedic chart — sidereal, Lahiri ayanamsa 23.755°. The same sky, read the old way.")
+    + "<div class='panel'><h3>Vedic placements (Lahiri)</h3>"
+    + "<div class='place ce-fire'><div class='meta'>Ascendant · 25°10′ ♈ Aries · Bharani-4 · 1st house</div></div>"
+    + "<div class='place ce-earth'><div class='meta'>☽ Moon · 11°21′ ♉ Taurus · Rohini-1 · 2nd house · exalted</div></div>"
+    + "<div class='place ce-earth'><div class='meta'>☉ Sun · 1°44′ ♍ Virgo · Uttara Phalguni-2 · 6th house</div></div>"
+    + "<div class='place ce-earth'><div class='meta'>☿ Mercury · 4°19′ ♍ Virgo · Uttara Phalguni-3 · 6th house · exalted, own sign</div></div>"
+    + "<div class='place ce-earth'><div class='meta'>♀ Venus · 27°42′ ♍ Virgo · Chitra-2 · 6th house · debilitated · rules the 7th</div></div>"
+    + "<div class='place ce-air'><div class='meta'>♂ Mars · 9°33′ ♊ Gemini · Ardra-1 · 3rd house</div></div>"
+    + "<div class='place ce-earth'><div class='meta'>♃ Jupiter · 1°25′ ♍ Virgo · Uttara Phalguni-2 · 6th house</div></div>"
+    + "<div class='place ce-earth'><div class='meta'>♄ Saturn · 18°41′ ♑ Capricorn · Shravana-3 · 10th house · own sign</div></div>"
+    + "<div class='place ce-fire'><div class='meta'>☊ Rahu · 2°12′ ♐ Sagittarius · Mula-1 · 9th house</div></div>"
+    + "</div>"
+    + "<div class='panel'><h3>Jupiter mahadasha: 12 September 2026 – 12 September 2042</h3>"
+    + "<div class='dasha-row now'><b>Jupiter-Jupiter</b> → Oct 30, 2028 · current</div>"
+    + "<div class='dasha-row'><b>Jupiter-Saturn</b> → May 13, 2031</div>"
+    + "<div class='dasha-row'><b>Jupiter-Mercury</b> → Aug 18, 2033</div>"
+    + "<div class='dasha-row'><b>Jupiter-Ketu</b> → Jul 25, 2034</div>"
+    + "<div class='dasha-row'><b>Jupiter-Venus</b> → Mar 25, 2037</div>"
+    + "<div class='dasha-row'><b>Jupiter-Sun</b> → Jan 11, 2038</div>"
+    + "<div class='dasha-row'><b>Jupiter-Moon</b> → May 13, 2039</div>"
+    + "<div class='dasha-row'><b>Jupiter-Mars</b> → Apr 18, 2040</div>"
+    + "<div class='dasha-row'><b>Jupiter-Rahu</b> → Sep 12, 2042</div>"
+    + "<p class='small'>Rahu Mahadasha ended 12 September 2026.</p>"
+    + "</div>"
     + "<div class='panel'><h3>Vedic (Lahiri)</h3>"
-    + "<p class='small'>Jupiter mahadasha: 12 September 2026 – 12 September 2042.</p>"
     + "<div class='place'><div class='meta'>Venus</div><p>Venus debilitated in Virgo in the 6th — and Venus rules the 7th. The partner significator sits in the house of struggle, service, and daily friction.</p></div>"
     + "<div class='place'><div class='meta'>Virgo in the 6th</div><p>Four planets in Virgo in the 6th — Sun, Mercury, Jupiter, Venus. A huge weight of the chart in the house of effort.</p></div>"
     + "<div class='place'><div class='meta'>Moon</div><p>Moon exalted in Taurus in the 2nd.</p></div>"
