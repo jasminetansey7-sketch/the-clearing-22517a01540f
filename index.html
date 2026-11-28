@@ -9,7 +9,7 @@
 <link href="maplibre/maplibre-gl.css" rel="stylesheet">
 <script src="maplibre/maplibre-gl.js"></script>
 <!--
-  The Clearing — Jasmine's personal app, v2.3.51 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination, Diary, Focus; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day. v2.3.41: the Focus view gains a History tab — finished and removed tasks are saved by day instead of disappearing; a not-done one can be brought back to Today's list. v2.3.42: the Mythology section gains a Creatures sub-tab — 13 creatures in Local and General sections, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on a creature page restores it. v2.3.43: the Divination & Guides section gains an Animal Medicine tab — 14 animals in Jasmine's order, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on an animal page restores it. v2.3.44: the duplicate 'current' pill in the Saju luck-pillars timeline is dropped at Jasmine's ask — the 乙巳 chapter keeps its highlight and its 'current (changed 22 April 2026)' wording. v2.3.44 also fixes the Mantra save: adding or deleting a mantra now saves immediately (saveNow), so it is never lost if the app is closed quickly. v2.3.45: the deity, creature, and animal lists are now alphabetical — the Pantheon and Animal Medicine in A-to-Z order, the Creatures kept in their Local and General sections, alphabetical within each. v2.3.46: the 707 Map is rebuilt on MapLibre with the offline tile set — the surveyed posts as tappable dots with their numbers, trails that light their posts gold (no lines drawn), the gold home pin, and a live-location dot; it works fully offline after the first load. The Loops, Alternatives, and Entrances lists from the old sketch map are gone with it. v2.3.47: the Animal Medicine Raven entry is reframed to the Norse telling — Odin's ravens Huginn and Muninn — with the new square portrait, and the Coast Salish telling moves to the Raven Log; tapping the map no longer yanks you down to the Spots box, and tapping a trail or a post no longer snaps the page. v2.3.48: tapping a trail now moves the map to frame that trail, so its gold posts are on screen; tapping the trail again to clear it leaves the map where it is. No trail lines are drawn. v2.3.49: Walk to a post — tap a post, tap Walk here, and the app guides you post to post along the trails from where you are, with the direction, the distance, and an estimated time; the destination and the next post stay gold, and the map follows you. No trail lines are drawn. v2.3.50: Tarot leaves the Astrology folder — it already lives in Divination & Guides, so Astrology is now Saju, Birth Charts, Numerology; a saved state pointing at Astrology's Tarot tab opens Saju instead. v2.3.51: Astrology gains Western and Vedic tabs — her whole-sign Western chart and her Vedic chart as study pages in the Saju style, drawn from Birth Charts; Birth Charts becomes a quick-reference sheet — two placements tables (with Chiron), the aspects the source names, stelliums, a Worth-noticing list, five numerology numbers, and the Day Master line.
+  The Clearing — Jasmine's personal app, v2.3.52 (autumn theme; folder tiles: Moon & Stars, Land, Astrology, Divination, Diary, Focus; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky rows: Sun, year/month/day pillars, sunrise & sunset (weather cache), ruling planet; folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Moon & Stars are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day. v2.3.41: the Focus view gains a History tab — finished and removed tasks are saved by day instead of disappearing; a not-done one can be brought back to Today's list. v2.3.42: the Mythology section gains a Creatures sub-tab — 13 creatures in Local and General sections, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on a creature page restores it. v2.3.43: the Divination & Guides section gains an Animal Medicine tab — 14 animals in Jasmine's order, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on an animal page restores it. v2.3.44: the duplicate 'current' pill in the Saju luck-pillars timeline is dropped at Jasmine's ask — the 乙巳 chapter keeps its highlight and its 'current (changed 22 April 2026)' wording. v2.3.44 also fixes the Mantra save: adding or deleting a mantra now saves immediately (saveNow), so it is never lost if the app is closed quickly. v2.3.45: the deity, creature, and animal lists are now alphabetical — the Pantheon and Animal Medicine in A-to-Z order, the Creatures kept in their Local and General sections, alphabetical within each. v2.3.46: the 707 Map is rebuilt on MapLibre with the offline tile set — the surveyed posts as tappable dots with their numbers, trails that light their posts gold (no lines drawn), the gold home pin, and a live-location dot; it works fully offline after the first load. The Loops, Alternatives, and Entrances lists from the old sketch map are gone with it. v2.3.47: the Animal Medicine Raven entry is reframed to the Norse telling — Odin's ravens Huginn and Muninn — with the new square portrait, and the Coast Salish telling moves to the Raven Log; tapping the map no longer yanks you down to the Spots box, and tapping a trail or a post no longer snaps the page. v2.3.48: tapping a trail now moves the map to frame that trail, so its gold posts are on screen; tapping the trail again to clear it leaves the map where it is. No trail lines are drawn. v2.3.49: Walk to a post — tap a post, tap Walk here, and the app guides you post to post along the trails from where you are, with the direction, the distance, and an estimated time; the destination and the next post stay gold, and the map follows you. No trail lines are drawn. v2.3.50: Tarot leaves the Astrology folder — it already lives in Divination & Guides, so Astrology is now Saju, Birth Charts, Numerology; a saved state pointing at Astrology's Tarot tab opens Saju instead. v2.3.51: Astrology gains Western and Vedic tabs — her whole-sign Western chart and her Vedic chart as study pages in the Saju style, drawn from Birth Charts; Birth Charts becomes a quick-reference sheet — two placements tables (with Chiron), the aspects the source names, stelliums, a Worth-noticing list, five numerology numbers, and the Day Master line. v2.3.52: the Weather view's Today banner becomes a rich current-conditions panel — current temperature, feels like, wind with gusts and direction, humidity, dew point, visibility, UV index, barometer (pressure_msl) with a 3-hour trend, an hourly temperature curve, and rain/wind/humidity rings, all from one Open-Meteo call; the days ahead are unchanged.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -193,6 +193,23 @@ button:active,.tile:active,.ftab:active,.item:active,.swatch:active,.t-move:acti
 .wx-row .wx-doodle-sm{flex:none; line-height:0; color:var(--ink-deep)}
 .wx-row .wx-doodle-sm svg{width:34px; height:34px; display:block}
 @media (max-width:600px){ .wx-banner .wx-doodle svg{width:78px; height:78px} .wx-banner{gap:14px} }
+.wx-banner-rich .wx-now{display:flex; gap:16px; align-items:center}
+.wx-banner-rich .wx-now .wx-doodle{flex:none; line-height:0; color:var(--ink-deep)}
+.wx-banner-rich .wx-now .wx-doodle svg{width:84px; height:84px; display:block}
+.wx-banner-rich .wx-now-temp{font-size:44px; font-weight:700; color:var(--ink-deep); line-height:1.05}
+.wx-banner-rich h3{margin:2px 0 4px}
+.wx-banner-rich .wx-curve{width:100%; height:auto; display:block; margin:10px 0 0; color:var(--ink-deep)}
+.wx-banner-rich .wx-curve text{fill:var(--muted); font-size:10px}
+.wx-rings{display:flex; gap:8px; justify-content:space-around; margin:12px 0 2px}
+.wx-ring{text-align:center; min-width:0}
+.wx-ring svg{width:84px; height:84px; display:block; margin:0 auto}
+.wx-ring .wx-ring-val{font-size:15px; font-weight:700; fill:var(--ink-deep)}
+.wx-ring .wx-ring-lab{font-size:12px; color:var(--muted); margin-top:2px}
+.wx-kv{display:grid; grid-template-columns:auto 1fr; gap:3px 12px; margin-top:10px}
+.wx-kv b{font-weight:700; color:var(--ink-deep)}
+.wx-kv span{text-align:right}
+@media (max-width:600px){ .wx-banner-rich .wx-now .wx-doodle svg{width:68px; height:68px} .wx-banner-rich .wx-now-temp{font-size:38px} .wx-ring svg{width:76px; height:76px} }
+
 .modal-bg{position:fixed; inset:0; background:rgba(60,40,20,.45); display:none; align-items:center; justify-content:center; z-index:50; padding:20px}
 .modal-bg.open{display:flex}
 .modal{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px; max-width:420px; width:100%}
@@ -2533,7 +2550,7 @@ VIEW_RENDER.moon = function(el){
    SEPARATE localStorage key ("jasmine-app-weather") — not in the saved
    document — so offline it shows the last forecast with its time. */
 const WEATHER_KEY = "jasmine-app-weather";
-const WEATHER_URL = "https://api.open-meteo.com/v1/forecast?latitude=49.17&longitude=-123.81&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max,sunrise,sunset&timezone=America%2FVancouver&forecast_days=7";
+const WEATHER_URL = "https://api.open-meteo.com/v1/forecast?latitude=49.17&longitude=-123.81&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max,sunrise,sunset&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,surface_pressure,pressure_msl,wind_speed_10m,wind_direction_10m,wind_gusts_10m&hourly=temperature_2m,precipitation_probability,relative_humidity_2m,dew_point_2m,visibility,uv_index,surface_pressure,pressure_msl,wind_speed_10m,wind_direction_10m,wind_gusts_10m&timezone=America%2FVancouver&forecast_days=7";
 function readWeatherCache(){
   try{ const raw = localStorage.getItem(WEATHER_KEY); if(!raw) return null; return JSON.parse(raw); }catch(e){ return null; }
 }
@@ -2578,6 +2595,117 @@ function wxCodeInfo(code){
   if(!hit) return {name:"", doodle:wxDoodle(WX_CLOUD)};
   return {name:hit[0], doodle:wxDoodle(hit[1])};
 }
+/* ---- Rich Today banner ---- */
+/* Current conditions from the same Open-Meteo call: the banner reads
+   data.current and data.hourly when they are there, and falls back to
+   the daily forecast when they are not (an older cached forecast has
+   neither). A missing field is omitted, never invented. */
+function wxCompass(deg){
+  if(deg==null||isNaN(deg)) return "";
+  const dirs=["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"];
+  return dirs[Math.round((((deg%360)+360)%360)/22.5)%16];
+}
+function wxUVWord(uv){
+  if(uv==null||isNaN(uv)) return "";
+  if(uv<3) return "Low";
+  if(uv<6) return "Moderate";
+  if(uv<8) return "High";
+  if(uv<11) return "Very High";
+  return "Extreme";
+}
+function wxNowHourIndex(h){
+  if(!h||!h.time||!h.time.length) return -1;
+  try{
+    const parts=new Intl.DateTimeFormat("en-CA",{timeZone:TZ,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
+    const g=k=>parts.find(p=>p.type===k).value;
+    const key=g("year")+"-"+g("month")+"-"+g("day")+"T"+g("hour")+":00";
+    const i=h.time.indexOf(key);
+    if(i>=0) return i;
+  }catch(e){}
+  return -1;
+}
+function wxPressureTrend(h,idx){
+  if(!h||!h.pressure_msl||idx<0) return "";
+  const now=h.pressure_msl[idx];
+  const then=h.pressure_msl[idx>=3?idx-3:0];
+  if(now==null||then==null) return "";
+  if(now>then) return "↑ Rising";
+  if(now<then) return "↓ Falling";
+  return "→ Steady";
+}
+function wxRing(pct,val,lab){
+  const p=Math.max(0,Math.min(100,pct));
+  return "<div class='wx-ring'><svg viewBox='0 0 84 84' aria-hidden='true'><circle cx='42' cy='42' r='34' fill='none' stroke='currentColor' stroke-width='7' stroke-opacity='0.18'/><circle cx='42' cy='42' r='34' fill='none' stroke='currentColor' stroke-width='7' stroke-linecap='round' pathLength='100' stroke-dasharray='"+p.toFixed(0)+" 100' transform='rotate(-90 42 42)'/><text x='42' y='47' text-anchor='middle' class='wx-ring-val'>"+esc(val)+"</text></svg><div class='wx-ring-lab'>"+esc(lab)+"</div></div>";
+}
+function wxHourCurve(h,todayDate,nowIdx){
+  if(!h||!h.time||!h.temperature_2m) return "";
+  const idxs=[];
+  for(let i=0;i<h.time.length;i++){ if(h.time[i].indexOf(todayDate)===0) idxs.push(i); }
+  if(idxs.length<2) return "";
+  const temps=idxs.map(i=>h.temperature_2m[i]).filter(t=>t!=null);
+  if(temps.length<2) return "";
+  let mn=Math.min.apply(null,temps), mx=Math.max.apply(null,temps);
+  if(mx-mn<2) mx=mn+2;
+  const W=320,H=86,PL=6,PR=6,PT=10,PB=18;
+  const xs=i=>PL+i*(W-PL-PR)/(idxs.length-1);
+  const ys=t=>PT+(mx-t)*(H-PT-PB)/(mx-mn);
+  const pts=idxs.map((hi,i)=>xs(i).toFixed(1)+","+ys(h.temperature_2m[hi]).toFixed(1)).join(" ");
+  const labs=[[0,"12a"],[6,"6a"],[12,"12p"],[18,"6p"],[23,"11p"]];
+  let svg="<svg class='wx-curve' viewBox='0 0 320 86' aria-hidden='true'><polyline points='"+pts+"' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>";
+  labs.forEach(L=>{ if(L[0]<idxs.length) svg+="<text x='"+xs(L[0]).toFixed(1)+"' y='82' text-anchor='middle'>"+L[1]+"</text>"; });
+  const ni=idxs.indexOf(nowIdx);
+  if(ni>=0) svg+="<circle cx='"+xs(ni).toFixed(1)+"' cy='"+ys(h.temperature_2m[idxs[ni]]).toFixed(1)+"' r='3.5' fill='currentColor'/>";
+  return svg+"</svg>";
+}
+function wxTodayBanner(data,today,updatedLabel){
+  const d=data.daily, cur=data.current||null, h=data.hourly||null;
+  const curInfo=wxCodeInfo(cur&&cur.weather_code!=null?cur.weather_code:(d.weather_code?d.weather_code[0]:null));
+  const name=curInfo.name||today.info.name||"Today's weather";
+  const nowIdx=wxNowHourIndex(h);
+  let s="<div class='panel wx-banner-rich'>";
+  s+="<div class='wx-now'><span class='wx-doodle' aria-hidden='true'>"+curInfo.doodle+"</span><div style='min-width:0'><div class='small'>Today — "+fmtDate(d.time[0])+"</div><h3>"+esc(name)+"</h3>";
+  if(cur&&cur.temperature_2m!=null) s+="<div class='wx-now-temp'>"+Math.round(cur.temperature_2m)+"°</div>";
+  s+="</div></div>";
+  s+="<div class='wx-temps'>High "+(today.hi==null?"—":today.hi+"°")+" · Low "+(today.lo==null?"—":today.lo+"°")+"</div>";
+  s+="<div class='meta'>Rain chance "+(today.pp==null?"—":today.pp+"%")+"</div>";
+  const curve=wxHourCurve(h,d.time[0],nowIdx);
+  if(curve) s+=curve;
+  const rings=[];
+  if(today.pp!=null) rings.push(wxRing(today.pp,today.pp+"%","Rain"));
+  if(cur&&cur.wind_speed_10m!=null) rings.push(wxRing(cur.wind_speed_10m/50*100,Math.round(cur.wind_speed_10m)+" km/h","Wind"));
+  if(cur&&cur.relative_humidity_2m!=null) rings.push(wxRing(cur.relative_humidity_2m,Math.round(cur.relative_humidity_2m)+"%","Humidity"));
+  if(rings.length) s+="<div class='wx-rings'>"+rings.join("")+"</div>";
+  const kv=[];
+  if(cur&&cur.apparent_temperature!=null) kv.push(["Feels like",Math.round(cur.apparent_temperature)+"°"]);
+  if(cur&&cur.wind_speed_10m!=null){
+    let w="";
+    const cw=wxCompass(cur.wind_direction_10m);
+    if(cw) w+=cw+" ";
+    if(cur.wind_direction_10m!=null) w+=Math.round(cur.wind_direction_10m)+"° · ";
+    w+=Math.round(cur.wind_speed_10m)+" km/h";
+    kv.push(["Wind",w]);
+  }
+  if(cur&&cur.wind_gusts_10m!=null){
+    let g=Math.round(cur.wind_gusts_10m)+" km/h";
+    if(h&&h.wind_gusts_10m){
+      let mx=null;
+      for(let i=0;i<h.time.length;i++){ if(h.time[i].indexOf(d.time[0])===0&&h.wind_gusts_10m[i]!=null){ if(mx==null||h.wind_gusts_10m[i]>mx) mx=h.wind_gusts_10m[i]; } }
+      if(mx!=null&&Math.round(mx)>Math.round(cur.wind_gusts_10m)) g+=" · up to "+Math.round(mx)+" km/h today";
+    }
+    kv.push(["Gusts",g]);
+  }
+  if(cur&&cur.relative_humidity_2m!=null) kv.push(["Humidity",Math.round(cur.relative_humidity_2m)+"%"]);
+  if(nowIdx>=0&&h&&h.dew_point_2m&&h.dew_point_2m[nowIdx]!=null) kv.push(["Dew point",Math.round(h.dew_point_2m[nowIdx])+"°"]);
+  if(nowIdx>=0&&h&&h.visibility&&h.visibility[nowIdx]!=null) kv.push(["Visibility",(h.visibility[nowIdx]/1000).toFixed(1)+" km"]);
+  if(nowIdx>=0&&h&&h.uv_index&&h.uv_index[nowIdx]!=null) kv.push(["UV index",(+h.uv_index[nowIdx]).toFixed(1)+" · "+wxUVWord(h.uv_index[nowIdx])]);
+  if(cur&&cur.pressure_msl!=null){
+    const tr=wxPressureTrend(h,nowIdx);
+    kv.push(["Barometer",Math.round(cur.pressure_msl)+" hPa"+(tr?" "+tr:"")]);
+  }
+  if(kv.length) s+="<div class='wx-kv'>"+kv.map(r=>"<b>"+esc(r[0])+"</b><span>"+esc(r[1])+"</span>").join("")+"</div>";
+  if(updatedLabel) s+="<div class='small' style='margin-top:8px'>"+esc(updatedLabel)+"</div>";
+  return s+"</div>";
+}
 VIEW_RENDER.weather = function(el){
   const cache = readWeatherCache();
   function draw(data, updatedLabel, note){
@@ -2599,7 +2727,7 @@ VIEW_RENDER.weather = function(el){
         return "<div class='item wx-row'><span class='wx-doodle-sm' aria-hidden='true'>"+x.info.doodle+"</span><div><b>"+fmtDate(day)+(x.info.name?" · "+esc(x.info.name):"")+"</b><div>"+dayTemps(x)+"</div><div class='meta'>"+dayMeta(x)+"</div></div></div>";
       }).join("");
       el.innerHTML = viewHead(viewMeta("weather"), "Gabriola Island — today and the days ahead.")
-        + "<div class='panel wx-banner'><span class='wx-doodle' aria-hidden='true'>"+today.info.doodle+"</span><div class='wx-banner-info'><div class='small'>Today — "+fmtDate(d.time[0])+"</div><h3>"+(today.info.name? esc(today.info.name) : "Today's weather")+"</h3><div class='wx-temps'>"+dayTemps(today)+"</div><div class='meta'>"+dayMeta(today)+"</div></div></div>"
+        + wxTodayBanner(data, today, updatedLabel)
         + "<div class='panel'><h3>The days ahead</h3><p class='small'>"+esc(updatedLabel)+"</p>"
         + (note? "<p>"+esc(note)+"</p>" : "")
         + rows
