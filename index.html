@@ -9,7 +9,7 @@
 <link href="maplibre/maplibre-gl.css" rel="stylesheet">
 <script src="maplibre/maplibre-gl.js"></script>
 <!--
-  The Clearing — Jasmine's personal app, v2.3.62 (autumn theme; folder tiles: Land, Astrology, Divination, Diary, Focus; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky is one page now — Sun, Moon, Tides, Night Sky, Solar System (see v2.3.54); folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Sky are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day. v2.3.41: the Focus view gains a History tab — finished and removed tasks are saved by day instead of disappearing; a not-done one can be brought back to Today's list. v2.3.42: the Mythology section gains a Creatures sub-tab — 13 creatures in Local and General sections, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on a creature page restores it. v2.3.43: the Divination & Guides section gains an Animal Medicine tab — 14 animals in Jasmine's order, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on an animal page restores it. v2.3.44: the duplicate 'current' pill in the Saju luck-pillars timeline is dropped at Jasmine's ask — the 乙巳 chapter keeps its highlight and its 'current (changed 22 April 2026)' wording. v2.3.44 also fixes the Mantra save: adding or deleting a mantra now saves immediately (saveNow), so it is never lost if the app is closed quickly. v2.3.45: the deity, creature, and animal lists are now alphabetical — the Pantheon and Animal Medicine in A-to-Z order, the Creatures kept in their Local and General sections, alphabetical within each. v2.3.46: the 707 Map is rebuilt on MapLibre with the offline tile set — the surveyed posts as tappable dots with their numbers, trails that light their posts gold (no lines drawn), the gold home pin, and a live-location dot; it works fully offline after the first load. The Loops, Alternatives, and Entrances lists from the old sketch map are gone with it. v2.3.47: the Animal Medicine Raven entry is reframed to the Norse telling — Odin's ravens Huginn and Muninn — with the new square portrait, and the Coast Salish telling moves to the Raven Log; tapping the map no longer yanks you down to the Spots box, and tapping a trail or a post no longer snaps the page. v2.3.48: tapping a trail now moves the map to frame that trail, so its gold posts are on screen; tapping the trail again to clear it leaves the map where it is. No trail lines are drawn. v2.3.49: Walk to a post — tap a post, tap Walk here, and the app guides you post to post along the trails from where you are, with the direction, the distance, and an estimated time; the destination and the next post stay gold, and the map follows you. No trail lines are drawn. v2.3.50: Tarot leaves the Astrology folder — it already lives in Divination & Guides, so Astrology is now Saju, Birth Charts, Numerology; a saved state pointing at Astrology's Tarot tab opens Saju instead. v2.3.51: Astrology gains Western and Vedic tabs — her whole-sign Western chart and her Vedic chart as study pages in the Saju style, drawn from Birth Charts; Birth Charts becomes a quick-reference sheet — two placements tables (with Chiron), the aspects the source names, stelliums, a Worth-noticing list, five numerology numbers, and the Day Master line. v2.3.52: the Weather view's Today banner becomes a rich current-conditions panel — current temperature, feels like, wind with gusts and direction, humidity, dew point, visibility, UV index, barometer (pressure_msl) with a 3-hour trend, an hourly temperature curve, and rain/wind/humidity rings, all from one Open-Meteo call; the days ahead are unchanged. v2.3.53: the Western, Vedic, and Birth Charts tabs are reworked — Western's placement cards gain planet and sign glyphs with element-coloured edges and the Chart facts move to the top as At a glance; Vedic gains per-planet placement cards with nakshatras and dignities, a Jupiter Mahadasha timeline with the current sub-period marked, and keeps the four notes; Birth Charts tables keep sign, degree, and house on one line with sign glyphs, and Worth noticing is grouped under small sub-headings. No placements or readings changed. v2.3.54: Sky is rebuilt as one page — Sun (daylight arc, sunrise/sunset, daylight length, golden hour, solar noon, Sun signs, ruling planet), Moon (phase, sign keywords, full-moon name, moonrise/moonset, coming moons), Tides · Silva Bay (harmonic model, curve + High/Low events, labelled about), Night Sky (planets up tonight / before dawn, from the embedded planet table), Solar System · Live (orrery from heliocentric longitudes). The Moon & Stars folder is gone; the tile is Sky. Pillar rows stay in Saju only. Everything works offline. v2.3.55: the Sky page is polished — the Night Sky planet rows and the Tides event rows are now flex rows with real gaps, like the v2.3.53 chart rows, so nothing runs together; no values changed. v2.3.56: the home-page hero header is polished — a bronze rule under the title, a richer parchment gradient with a soft inner light, and a short hairline above the personal-day line so the day's sky and your day read as two groups; no words changed. v2.3.57: the Western At a glance panel gains the Big 3 — Sun (Virgo · 25°29′ · 5th house), Moon (Gemini · 05°06′ · 2nd house), Rising (Taurus · 18°55′ · 1st house) as the first three rows; the Ascendant row is relabeled Rising in that panel only, and the empty 12th house line is dropped at Jasmine's ask. v2.3.58: Western and Vedic tabs gain an Element balance section — four drawn element doodles with counts and bars; Western counts the ten planets (Earth 5, Air 3, Water 2, Fire 0), Vedic counts the nine grahas (Earth 6, Air 2, Fire 1, Water 0), each with its counting convention stated; no interpretations added. v2.3.59: the Vedic notes panel is filled out and restyled to match the placement cards — each of the four notes keeps its original text verbatim and gains its facts from its own placement card (degree, nakshatra, dignities, rulerships), with element-coloured left edges; the Element balance moves before the placement cards on both tabs, and the Western and Vedic tab layouts are unified (intro, Element balance, placement cards, closing section) with identical panel and card markup; the zodiac sign glyphs are removed throughout the app (they rendered as purple emoji tiles on her phone) while the sign names and the planet glyphs stay. v2.3.60: each folder tab gets its own active colour — before this every tab in a folder shared the one folder accent, so tabs in a folder were indistinguishable when active and folders sharing a tile colour shared the accent too; now Astrology is Saju Brick, Western Teal, Vedic Plum, Birth Charts Moss, Numerology Pumpkin; Divination & Guides is Tarot Plum, Runes Bark, Deck Collection Teal, Mythology Pumpkin, Animal Medicine Moss; Mythology sub-tabs are Story Pumpkin, Pantheon Plum, Creatures Moss, Stories Teal; Land is Map Moss, Compass Pumpkin, Raven Log Pebble, Field Guide Brick; Cabinet is Plants Moss, Stones Pebble, Essential oils Pumpkin, Incense & resin Plum, and ★ Favourites keeps its gold; Diary is Tonight Teal, Cycle Plum; Focus is Today Brick, History Bark. Each tab's colour echoes its subject; the two dark pills (Pebble, Plum) take cream text, the rest dark ink. No tab content or tile colours changed. v2.3.61: the Vedic tab gains an At a glance panel at the top, mirroring the Western one — same panel and row style, same five rows in the same order (Sun, Moon, Rising, Born, Moon at birth) with the Vedic values: Sun Virgo 1°44′ 6th house, Moon Taurus 11°21′ 2nd house, Rising Aries 25°10′ 1st house. It sits right after the intro, before the Element balance, so the Vedic order is now intro, At a glance, Element balance, placements, dasha, notes — the same shape as Western. No values changed anywhere else. v2.3.62: a plain quick tap on a word no longer leaves it selected — Android's tap-to-search was highlighting the tapped word and opening the search sheet. A tap under 250 ms with under 10 px of movement now clears any selection on the next tick (and once more 100 ms later, in case the browser creates the selection with the click); a second quick tap within 300 ms counts as a double-tap and is left alone, so double-tap word selection still works; a long-press or a drag-select is untouched, so copying still works by long-press. Text stays selectable — no user-select:none was added to content — and -webkit-tap-highlight-color was already transparent. No values changed anywhere else.
+  The Clearing — Jasmine's personal app, v2.3.63 (autumn theme; folder tiles: Land, Astrology, Divination, Diary, Focus; Deck collection lives under Divination; forest-clearing photo background (embedded JPEG, soft cream veil over it); English glosses beside Korean Saju names; document-level drag — no pointer capture, mouse/arrange drags start on movement, touch holds to lift; header on the home page only; tile colours from the picker — tap a tile in Arrange tiles, hold one on the home grid; 8th palette swatch Teal, a muted teal from her wool (was Mossy — too close to Moss); hero rebuilt from scratch — thin gold inset frame, centred display title, small-caps date, no Sync button in the header; hero lines: year/month/day element+animal, Sun+Moon with drawn icons, personal day/card/rune; Sky is one page now — Sun, Moon, Tides, Night Sky, Solar System (see v2.3.54); folder-tab switches replace history, and Home goes straight home; tarot pictures removed in v2.3.14 (RWS deck, keywords and meanings stay — file back under 500 KB); Saju rewritten in plain beginner English in v2.3.16 — pillars with personality lines, ten gods in plain words, balance, spirit stars, life-stages & sounds, clashes, luck pillars without ratings, notes with why-it's-interesting; The Pantheon added in v2.3.15 (16 deities she honours); Pantheon detail pages in v2.3.18 (picture + correspondences per deity; drawn line motifs for the four without a free picture; statue and altar marks removed — all statues are on the altar by default); icon bar below the hero (v2.3.17, after Theo's Hearth app) — one circular icon per tile, each tile's own drawn line icon, in tile order, tapping opens that tile's view, home page only). Saju restyled in v2.3.19 (separated cards, type hierarchy, element accents, luck timeline — text unchanged); Deck collection +13 decks from the Nov 26 check-in (27 total); tap highlight removed — pressed elements darken instead of flashing blue; new Pebble tile colour (warm dark grey, cream text; saved assignments for the colour it replaces migrate); Pantheon hint now 'Tap to open ›' (no pronoun). Card system in v2.3.20: the Saju hierarchy (view titles with a gold rule, panel headings with a gold underline, place cards, rune cards, tarot browse cards, deck status and field-group accents) carried across the whole app — text unchanged; Saju itself byte-identical. v2.3.27: fixed tile colours and order (Jasmine's own arrangement) with a one-time migration so saved docs show it; the colour picker and reordering still work and save at once. v2.3.28: cabinet gains Essential oils, Incense & resin, and a gold ★ Favourites tab; Tools removed; Weather tile Teal (she remembered Teal); Plum, Bark, and Moss darkened (Plum now cream text); tree-branch borders flank the hero header. v2.3.29: home tile icons bigger (64px, was 38px) so they fill the tall tiles better on phone; Focus, Diary, Mantra, and Sky are title-only on the home grid; phone rows pack edge to edge (Divination spans 4, Astrology spans 2 on phone). v2.3.30: the hero's "Arrange tiles" button is removed at Jasmine's ask; arrange mode stays in the code (guarded listener), unreachable, so it can be restored later. Follow-up: hero personal line breaks after the personal day number so the rune never dangles; colour-picker help now says long-press (Arrange tiles is gone); Log today's rune/card saves at once and the button shows it is logged once done. v2.3.31: Weather view redesigned — today is a large banner with a big drawn doodle of the day's weather plus its numbers, the following days stay a list with a small doodle per day; weather_code added to the forecast fetch. Hero lines break at real <br>s (year · month / day on its own row; Sun / Moon on its own row) so nothing splits mid-phrase on her phone, with nowrap phrases and 12px hero lines on phones. Sky view tidied with doodle rows, clean sub-lines, zodiac and planet glyphs. Numerology tab gains a 'Look up a number' area. Home footer removed — the Sync view is reached from a quiet text link at the bottom of the home page, and the Sync view gains Export/Import backup buttons. Divination renamed 'Divination & Guides' (tile title only; tabs and subtitle unchanged). Mythology tab gains sub-tabs — Story of the day (default), Pantheon, Stories (seeded list + Your own entries). v2.3.32: Pantheon detail pages swap in the 16 approved cameo portraits (one per deity, ~400px q70, rune-free) with a subtle colour hint from each portrait on its page (portrait frame, title rule, panel bars); the 12 historical pictures and 4 drawn motifs are replaced (the motif code stays, unused by deities). v2.3.33: home tiles gain a large faded watermark of each tile's own drawn icon (Theo's Hearth look, in her style — soft brown line art, subtle); the bottom-right tile motifs are retired. Sky pillar rows swap the generic columns doodle for a small drawn doodle of that pillar's animal (all 12 zodiac animals). v2.3.34: home-screen icons become maskable ("any maskable" in the manifest) and are recomposed for the maskable safe zone — the scene is scaled to 85% and centred on a canvas extended with its own edge pixels, so the stump and ferns survive the launcher crop. v2.3.35: the Diary view becomes tap-to-answer like the Diary space — Weather (10 buttons), Mood (5), Body (5: Rough, Low, Okay, Good, Strong), each with a small optional note; the two writing fields stay; tapping a button saves at once. v2.3.36: Deck Collection moves before Mythology in the Divination & Guides tab list (Tarot, Runes, Deck Collection, Mythology) — tab order and tile subtitle only; Tarot stays the default tab and no tab content changes. The label is now "Deck Collection" (capital C) everywhere it is shown. v2.3.37: a reload reopens the page she was on — the history entry's state is read back at boot, so a refresh keeps her place (a folder tab, a deity page); a fresh open still lands on home. v2.3.38: the Diary gains a Cycle tab — a menstrual cycle tracker: log period dates on a clean month calendar (no moon phases), predictions from her own logged cycles only, PMS symptoms for today, and today's phase only — never facts about other phases. v2.3.39: the Focus view becomes a daily to-do list — add things, tap one to make it your focus, ✓ when it's done (it disappears), ↑ ↓ to reorder; unfinished items carry to the next day, nothing auto-clears. v2.3.40: the card of the day and the rune of the day are pulled by her first — the hero, Tarot and Runes views show a pull button until she taps it; the pick is still the same date-hash draw, and a pull is remembered for the day. v2.3.41: the Focus view gains a History tab — finished and removed tasks are saved by day instead of disappearing; a not-done one can be brought back to Today's list. v2.3.42: the Mythology section gains a Creatures sub-tab — 13 creatures in Local and General sections, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on a creature page restores it. v2.3.43: the Divination & Guides section gains an Animal Medicine tab — 14 animals in Jasmine's order, each with its approved cameo portrait and a detail page like the Pantheon pages; a reload on an animal page restores it. v2.3.44: the duplicate 'current' pill in the Saju luck-pillars timeline is dropped at Jasmine's ask — the 乙巳 chapter keeps its highlight and its 'current (changed 22 April 2026)' wording. v2.3.44 also fixes the Mantra save: adding or deleting a mantra now saves immediately (saveNow), so it is never lost if the app is closed quickly. v2.3.45: the deity, creature, and animal lists are now alphabetical — the Pantheon and Animal Medicine in A-to-Z order, the Creatures kept in their Local and General sections, alphabetical within each. v2.3.46: the 707 Map is rebuilt on MapLibre with the offline tile set — the surveyed posts as tappable dots with their numbers, trails that light their posts gold (no lines drawn), the gold home pin, and a live-location dot; it works fully offline after the first load. The Loops, Alternatives, and Entrances lists from the old sketch map are gone with it. v2.3.47: the Animal Medicine Raven entry is reframed to the Norse telling — Odin's ravens Huginn and Muninn — with the new square portrait, and the Coast Salish telling moves to the Raven Log; tapping the map no longer yanks you down to the Spots box, and tapping a trail or a post no longer snaps the page. v2.3.48: tapping a trail now moves the map to frame that trail, so its gold posts are on screen; tapping the trail again to clear it leaves the map where it is. No trail lines are drawn. v2.3.49: Walk to a post — tap a post, tap Walk here, and the app guides you post to post along the trails from where you are, with the direction, the distance, and an estimated time; the destination and the next post stay gold, and the map follows you. No trail lines are drawn. v2.3.50: Tarot leaves the Astrology folder — it already lives in Divination & Guides, so Astrology is now Saju, Birth Charts, Numerology; a saved state pointing at Astrology's Tarot tab opens Saju instead. v2.3.51: Astrology gains Western and Vedic tabs — her whole-sign Western chart and her Vedic chart as study pages in the Saju style, drawn from Birth Charts; Birth Charts becomes a quick-reference sheet — two placements tables (with Chiron), the aspects the source names, stelliums, a Worth-noticing list, five numerology numbers, and the Day Master line. v2.3.52: the Weather view's Today banner becomes a rich current-conditions panel — current temperature, feels like, wind with gusts and direction, humidity, dew point, visibility, UV index, barometer (pressure_msl) with a 3-hour trend, an hourly temperature curve, and rain/wind/humidity rings, all from one Open-Meteo call; the days ahead are unchanged. v2.3.53: the Western, Vedic, and Birth Charts tabs are reworked — Western's placement cards gain planet and sign glyphs with element-coloured edges and the Chart facts move to the top as At a glance; Vedic gains per-planet placement cards with nakshatras and dignities, a Jupiter Mahadasha timeline with the current sub-period marked, and keeps the four notes; Birth Charts tables keep sign, degree, and house on one line with sign glyphs, and Worth noticing is grouped under small sub-headings. No placements or readings changed. v2.3.54: Sky is rebuilt as one page — Sun (daylight arc, sunrise/sunset, daylight length, golden hour, solar noon, Sun signs, ruling planet), Moon (phase, sign keywords, full-moon name, moonrise/moonset, coming moons), Tides · Silva Bay (harmonic model, curve + High/Low events, labelled about), Night Sky (planets up tonight / before dawn, from the embedded planet table), Solar System · Live (orrery from heliocentric longitudes). The Moon & Stars folder is gone; the tile is Sky. Pillar rows stay in Saju only. Everything works offline. v2.3.55: the Sky page is polished — the Night Sky planet rows and the Tides event rows are now flex rows with real gaps, like the v2.3.53 chart rows, so nothing runs together; no values changed. v2.3.56: the home-page hero header is polished — a bronze rule under the title, a richer parchment gradient with a soft inner light, and a short hairline above the personal-day line so the day's sky and your day read as two groups; no words changed. v2.3.57: the Western At a glance panel gains the Big 3 — Sun (Virgo · 25°29′ · 5th house), Moon (Gemini · 05°06′ · 2nd house), Rising (Taurus · 18°55′ · 1st house) as the first three rows; the Ascendant row is relabeled Rising in that panel only, and the empty 12th house line is dropped at Jasmine's ask. v2.3.58: Western and Vedic tabs gain an Element balance section — four drawn element doodles with counts and bars; Western counts the ten planets (Earth 5, Air 3, Water 2, Fire 0), Vedic counts the nine grahas (Earth 6, Air 2, Fire 1, Water 0), each with its counting convention stated; no interpretations added. v2.3.59: the Vedic notes panel is filled out and restyled to match the placement cards — each of the four notes keeps its original text verbatim and gains its facts from its own placement card (degree, nakshatra, dignities, rulerships), with element-coloured left edges; the Element balance moves before the placement cards on both tabs, and the Western and Vedic tab layouts are unified (intro, Element balance, placement cards, closing section) with identical panel and card markup; the zodiac sign glyphs are removed throughout the app (they rendered as purple emoji tiles on her phone) while the sign names and the planet glyphs stay. v2.3.60: each folder tab gets its own active colour — before this every tab in a folder shared the one folder accent, so tabs in a folder were indistinguishable when active and folders sharing a tile colour shared the accent too; now Astrology is Saju Brick, Western Teal, Vedic Plum, Birth Charts Moss, Numerology Pumpkin; Divination & Guides is Tarot Plum, Runes Bark, Deck Collection Teal, Mythology Pumpkin, Animal Medicine Moss; Mythology sub-tabs are Story Pumpkin, Pantheon Plum, Creatures Moss, Stories Teal; Land is Map Moss, Compass Pumpkin, Raven Log Pebble, Field Guide Brick; Cabinet is Plants Moss, Stones Pebble, Essential oils Pumpkin, Incense & resin Plum, and ★ Favourites keeps its gold; Diary is Tonight Teal, Cycle Plum; Focus is Today Brick, History Bark. Each tab's colour echoes its subject; the two dark pills (Pebble, Plum) take cream text, the rest dark ink. No tab content or tile colours changed. v2.3.61: the Vedic tab gains an At a glance panel at the top, mirroring the Western one — same panel and row style, same five rows in the same order (Sun, Moon, Rising, Born, Moon at birth) with the Vedic values: Sun Virgo 1°44′ 6th house, Moon Taurus 11°21′ 2nd house, Rising Aries 25°10′ 1st house. It sits right after the intro, before the Element balance, so the Vedic order is now intro, At a glance, Element balance, placements, dasha, notes — the same shape as Western. No values changed anywhere else. v2.3.62: a plain quick tap on a word no longer leaves it selected — Android's tap-to-search was highlighting the tapped word and opening the search sheet. A tap under 250 ms with under 10 px of movement now clears any selection on the next tick (and once more 100 ms later, in case the browser creates the selection with the click); a second quick tap within 300 ms counts as a double-tap and is left alone, so double-tap word selection still works; a long-press or a drag-select is untouched, so copying still works by long-press. Text stays selectable — no user-select:none was added to content — and -webkit-tap-highlight-color was already transparent. No values changed anywhere else. v2.3.63: Astrology gains a Today tab, first in the list and the default when Astrology opens — a daily rundown of how the sky is touching your Western chart, computed in the app from the embedded planet table: the tightest aspect in one line, the Moon today (sign, phase, illumination, moonrise/moonset, matching the Sky view), the day's transits to your natal chart with a short plain line each (orbs 5°, the Moon 6°), the Sun and Moon in your houses, and anything changing sign. For a date past the table's end (30 June 2027) the tab says so plainly instead of showing anything stale. No values changed anywhere else.
   Automatic sync: data syncs to a Google Sheet through a small Apps
   Script bridge (SYNC_URL below). Sync metadata lives in a separate
   localStorage key ("jasmine-app-sync") — never inside the saved doc.
@@ -488,7 +488,7 @@ const PALETTE = [
    old hash rotation is only a last-resort fallback. Palette index:
    Bark 0, Cream 1, Pebble 2, Moss 3, Brick 4, Plum 5, Pumpkin 6, Teal 7.
    v2.3.28: Weather is Teal (7), not Bark — she remembered Teal. */
-const FIXED_COLORS = {sky:1, weather:7, astrology:1, divination:5, cabinet:2, calendar:0, diary:2, focus:4, mantra:6, land:3, tonight:2, cycle:2, today:4, history:4};
+const FIXED_COLORS = {sky:1, weather:7, astrology:1, divination:5, cabinet:2, calendar:0, diary:2, focus:4, mantra:6, land:3, tonight:2, cycle:2, today:4, astrotoday:0, history:4};
 /* v2.3.27: Jasmine's fixed tile order, as she arranged it herself. */
 const FIXED_ORDER = ["focus","weather","sky","calendar","divination","astrology","diary","mantra","cabinet","land"];
 /* The order the app used before v2.3.27. The migration replaces a saved
@@ -1410,6 +1410,7 @@ const VIEW_META = {
   tonight:{name:"Tonight",icon:"book"},
   cycle:{name:"Cycle",icon:"ring"},
   today:{name:"Today",icon:"ring"},
+  astrotoday:{name:"Today",icon:"crescent"},
   history:{name:"History",icon:"phases"},
   mantra:{name:"Mantra",icon:"lotus"},
   ravens:{name:"Raven Log",icon:"feather"},
@@ -1423,7 +1424,7 @@ function viewMeta(id){ return VIEW_META[id] || {name:id, icon:"spiral"}; }
    Divination & Guides only — it left the Astrology folder. */
 const FOLDERS = {
   land:{name:"Land",icon:"mountain",tabs:["map","compass","ravens","field"]},
-  astrology:{name:"Astrology",icon:"spiral",tabs:["saju","western","vedic","charts","numerology"]},
+  astrology:{name:"Astrology",icon:"spiral",tabs:["astrotoday","saju","western","vedic","charts","numerology"]},
   diary:{name:"Diary",icon:"book",tabs:["tonight","cycle"]},
   focus:{name:"Focus",icon:"ring",tabs:["today","history"]},
   divination:{name:"Divination & Guides",icon:"crystal",tabs:["tarot","runes","decks","myth","animals"]}
@@ -1436,7 +1437,7 @@ function homeIcon(t){ const k = t.folder ? FOLDERS[t.id].icon : VIEW_META[t.id].
 const TILES = [
   {id:"sky", size:"small", tall:true, titleOnly:true, sub:()=>"Sun \u00b7 Moon \u00b7 Tides \u00b7 Night Sky \u00b7 Solar System"},
   {id:"weather",  size:"small",  sub:()=>{ const c=readWeatherCache(); const d=c&&c.data&&c.data.daily; if(!d||!d.time||!d.time.length) return "Gabriola — today and ahead"; let s="High "+d.temperature_2m_max[0]+"° · Low "+d.temperature_2m_min[0]+"°"; const p=d.precipitation_probability_max&&d.precipitation_probability_max[0]; if(p!=null&&p>=20) s+=" · "+p+"% rain"; return s; }},
-  {id:"astrology",folder:true,   size:"half",   sub:()=>"Saju · Western · Vedic · Birth Charts · Numerology"},
+  {id:"astrology",folder:true,   size:"half",   sub:()=>"Today · Saju · Western · Vedic · Birth Charts · Numerology"},
   {id:"divination",folder:true,  size:"half",   sub:()=>"Tarot · Runes · Deck Collection · Mythology · Animal Medicine"},
   {id:"cabinet",  size:"small",  sub:()=>state.cabinet.length+" things in the cabinet"},
   {id:"calendar", size:"small", tall:true, sub:()=>{ const t=todayStr(); const up=state.events.filter(e=>e.date>=t).sort((a,b)=>a.date<b.date?-1:1); if(!up.length) return "Nothing coming up"; const e=up[0]; const title=e.title.length>24? e.title.slice(0,24)+"…" : e.title; return shortDate(e.date)+" · "+title; }},
@@ -1709,6 +1710,7 @@ const TAB_ACCENTS = {
   "tonight":["#6f9a90","#382715"],
   "cycle":["#6b4f70","#fff8ea"],
   "today":["#c78a66","#382715"],
+  "astrotoday":["#ab8c6d","#382715"],
   "history":["#ab8c6d","#382715"],
 };
 function tabAcc(id){ const a = TAB_ACCENTS[id]; return a ? ' style="--tab-acc:'+a[0]+';--tab-ink:'+a[1]+'"' : ""; }
@@ -2641,6 +2643,184 @@ VIEW_RENDER.vedic = function(el){
     + "<div class='place ce-earth'><div class='meta'>Moon</div><p>Moon exalted in Taurus in the 2nd.</p><p class='small'>Moon · 11°21′ · Taurus · Rohini-1 · 2nd house · exalted · rules Cancer, the 4th house</p></div>"
     + "<div class='place ce-earth'><div class='meta'>Saturn</div><p>Saturn in Capricorn in the 10th, own sign.</p><p class='small'>Saturn · 18°41′ · Capricorn · Shravana-3 · 10th house · own sign · rules the 10th and 11th</p></div>"
     + "</div>";
+};
+/* ---- Astrology Today (v2.3.63) ---- */
+/* A daily rundown of how the sky is touching her Western chart — the
+   morning chart check, computed in the app from the embedded planet
+   table (12:00 local, Nov 27 2026 – Jun 30 2027) and the Moon tables.
+   Whole-sign houses from her Taurus Ascendant (18°55′). Orbs: 5° for
+   all planets, 6° for the Moon. The lines are short set sentences —
+   weather language only, never fate, never "will", never medical claims.
+   The Moon section uses the same calls as the Sky view (moonPhase,
+   moonSignNow, skyMoonRiseSet), so the two always agree. */
+const ASTRO_NATAL = {
+  Sun:150+25+29/60, Moon:60+5+6/60, Mercury:150+28+4/60, Venus:180+21+27/60,
+  Mars:90+3+19/60, Saturn:300+12+27/60, Uranus:270+14+3/60, Neptune:270+16+12/60,
+  Pluto:210+20+49/60
+};
+const ASTRO_ORDER = ["Sun","Moon","Mercury","Venus","Mars","Jupiter","Saturn","Uranus","Neptune"];
+const ASTRO_GEO_IDX = {Sun:1, Moon:2, Mercury:3, Venus:6, Mars:9, Jupiter:12, Saturn:15, Uranus:18, Neptune:21};
+const ASTRO_GLYPHS = {Sun:"\u2609",Moon:"\u263d",Mercury:"\u263f",Venus:"\u2640",Mars:"\u2642",Jupiter:"\u2643",Saturn:"\u2644",Uranus:"\u2645",Neptune:"\u2646",Pluto:"\u2647"};
+const ASTRO_ASPECTS = [[0,"conjunction"],[60,"sextile"],[90,"square"],[120,"trine"],[180,"opposition"]];
+const ASTRO_LINES = {
+  Sun:{
+    conjunction:"The Sun is conjunct your {natal} — the day's light falls right on it, and it stands out more than usual.",
+    sextile:"The Sun is sextile your {natal} — a small opening, easy to use if you notice it.",
+    square:"The Sun is square your {natal} — a rub between what the day asks and what this part of you wants.",
+    trine:"The Sun is trine your {natal} — the day flows with this part of you, steady and unforced.",
+    opposition:"The Sun is opposite your {natal} — this part of you is lit up from across the room; it asks to be seen, not fixed."},
+  Moon:{
+    conjunction:"The Moon is conjunct your {natal} — feelings gather around this part of you today.",
+    sextile:"The Moon is sextile your {natal} — a soft opening in the day's mood, easy to lean into.",
+    square:"The Moon is square your {natal} — the day's mood rubs against this part of you; feelings run closer to the surface.",
+    trine:"The Moon is trine your {natal} — feelings move easily with this part of you today.",
+    opposition:"The Moon is opposite your {natal} — this part of you is awake on the other side of the day, asking for a little attention."},
+  Mercury:{
+    conjunction:"Mercury is conjunct your {natal} — words and thoughts crowd around this part of you today.",
+    sextile:"Mercury is sextile your {natal} — a useful thought or conversation is close by, if you reach for it.",
+    square:"Mercury is square your {natal} — words can snag here; take an extra beat before answering.",
+    trine:"Mercury is trine your {natal} — thoughts and words move easily around this part of you today.",
+    opposition:"Mercury is opposite your {natal} — another angle on this part of you is on the table; it is worth hearing."},
+  Venus:{
+    conjunction:"Venus is conjunct your {natal} — warmth and ease gather around this part of you today.",
+    sextile:"Venus is sextile your {natal} — a small pleasure or kindness is on offer here.",
+    square:"Venus is square your {natal} — wanting and having do not quite line up around this part of you today.",
+    trine:"Venus is trine your {natal} — ease and affection flow toward this part of you today.",
+    opposition:"Venus is opposite your {natal} — this part of you is mirrored back at you; notice what it shows."},
+  Mars:{
+    conjunction:"Mars is conjunct your {natal} — energy and heat gather around this part of you today.",
+    sextile:"Mars is sextile your {natal} — a useful push is available here, if you want it.",
+    square:"Mars is square your {natal} — friction gathers around this part of you; move slowly and keep it small.",
+    trine:"Mars is trine your {natal} — energy moves cleanly through this part of you today.",
+    opposition:"Mars is opposite your {natal} — this part of you is met with force from outside; hold your ground quietly."},
+  Jupiter:{
+    conjunction:"Jupiter is conjunct your {natal} — this part of you has room to grow today; it feels bigger than usual.",
+    sextile:"Jupiter is sextile your {natal} — a small opening toward more, here, if you want it.",
+    square:"Jupiter is square your {natal} — this part of you wants more than the day comfortably holds; keep it honest.",
+    trine:"Jupiter is trine your {natal} — this part of you has an easy wind behind it today.",
+    opposition:"Jupiter is opposite your {natal} — this part of you is asked to stretch; take what is real and leave the rest."},
+  Saturn:{
+    conjunction:"Saturn is conjunct your {natal} — this part of you is under a steady, heavy hand today; slow and exact wins.",
+    sextile:"Saturn is sextile your {natal} — a solid step is available here, small and real.",
+    square:"Saturn is square your {natal} — this part of you meets a wall today; the work is in going around, not through.",
+    trine:"Saturn is trine your {natal} — this part of you has steady ground under it today.",
+    opposition:"Saturn is opposite your {natal} — this part of you meets a limit from outside; name it plainly."},
+  Uranus:{
+    conjunction:"Uranus is conjunct your {natal} — a jolt of something new moves through this part of you today.",
+    sextile:"Uranus is sextile your {natal} — a small surprise or a fresh angle is close by here.",
+    square:"Uranus is square your {natal} — this part of you wants out of its usual shape; restlessness is the signal.",
+    trine:"Uranus is trine your {natal} — change moves easily through this part of you today.",
+    opposition:"Uranus is opposite your {natal} — something unexpected arrives from outside this part of you; stay loose."},
+  Neptune:{
+    conjunction:"Neptune is conjunct your {natal} — this part of you is soft-edged today; dreams and fog both live here.",
+    sextile:"Neptune is sextile your {natal} — a soft opening, good for imagining, less good for deciding.",
+    square:"Neptune is square your {natal} — this part of you is hard to see clearly today; hold off on conclusions.",
+    trine:"Neptune is trine your {natal} — imagination and feeling move gently through this part of you today.",
+    opposition:"Neptune is opposite your {natal} — this part of you is seen through a haze; what looks clear may not be."}
+};
+function astroSign(lon){ return ZODIAC_SIGNS[Math.floor(skyMod360(lon)/30)%12]; }
+function astroHouse(lon){ return ((Math.floor(skyMod360(lon)/30)-1+12)%12)+1; } /* whole-sign from Taurus Ascendant */
+function astroElem(sign){ if(sign==="Aries"||sign==="Leo"||sign==="Sagittarius") return "fire"; if(sign==="Taurus"||sign==="Virgo"||sign==="Capricorn") return "earth"; if(sign==="Gemini"||sign==="Libra"||sign==="Aquarius") return "air"; return "water"; }
+function astroOrd(n){ return n===1?"1st":n===2?"2nd":n===3?"3rd":n+"th"; }
+function astroOrbFmt(orb){ return (Math.round(orb*10)/10).toFixed(1); }
+function astroFmtTime(hm){ var h=+hm.slice(0,2), m=hm.slice(3,5); var ap=h>=12?"PM":"AM"; var hh=h%12; if(hh===0) hh=12; return hh+":"+m+" "+ap; }
+function astroTransits(dateStr){
+  var row = PLANET_BY_DATE[dateStr];
+  if(!row) return null;
+  var out = [];
+  ASTRO_ORDER.forEach(function(tp){
+    var tl = row[ASTRO_GEO_IDX[tp]];
+    var lim = tp==="Moon" ? 6 : 5;
+    Object.keys(ASTRO_NATAL).forEach(function(np){
+      var nl = ASTRO_NATAL[np];
+      var diff = Math.abs(tl-nl)%360;
+      if(diff>180) diff = 360-diff;
+      ASTRO_ASPECTS.forEach(function(a){
+        var orb = Math.abs(diff-a[0]);
+        if(orb<=lim) out.push({tp:tp, asp:a[1], np:np, orb:orb});
+      });
+    });
+  });
+  out.sort(function(a,b){ return a.orb-b.orb; });
+  return out;
+}
+function astroIngresses(dateStr){
+  var row = PLANET_BY_DATE[dateStr];
+  if(!row) return null;
+  var p = dateStr.split("-");
+  var prev = new Date(Date.UTC(+p[0],+p[1]-1,+p[2]-1));
+  var prevStr = prev.getUTCFullYear()+"-"+String(prev.getUTCMonth()+1).padStart(2,"0")+"-"+String(prev.getUTCDate()).padStart(2,"0");
+  var prow = PLANET_BY_DATE[prevStr];
+  var out = [];
+  if(prow){
+    ASTRO_ORDER.forEach(function(tp){
+      if(tp==="Moon") return; /* the Moon's ingress comes from the Moon table, with its time */
+      var s0 = astroSign(prow[ASTRO_GEO_IDX[tp]]);
+      var s1 = astroSign(row[ASTRO_GEO_IDX[tp]]);
+      if(s0!==s1) out.push({planet:tp, from:s0, to:s1, time:null});
+    });
+  }
+  MOON_INGRESSES.forEach(function(ing){
+    if(ing.date===dateStr) out.push({planet:"Moon", from:null, to:ing.sign, time:ing.time});
+  });
+  return out;
+}
+function astroTodayHTML(dateStr){
+  var row = PLANET_BY_DATE[dateStr];
+  if(!row) return "<div class='panel'><p>The day's sky data runs to 30 June 2027 — a new data drop is needed after that.</p></div>";
+  var transits = astroTransits(dateStr);
+  var sunLon = row[ASTRO_GEO_IDX.Sun], moonLon = row[ASTRO_GEO_IDX.Moon];
+  var sunSign = astroSign(sunLon), moonSign = astroSign(moonLon);
+  var sunHouse = astroHouse(sunLon), moonHouse = astroHouse(moonLon);
+  var oneLine;
+  if(transits.length){
+    var t0 = transits[0];
+    oneLine = "Closest today: "+t0.tp+" "+t0.asp+" your "+t0.np+", "+astroOrbFmt(t0.orb)+"° apart.";
+  } else {
+    oneLine = "The Moon is in "+moonSign+" today, your "+astroOrd(moonHouse)+" house.";
+  }
+  var html = "<div class='panel'><h3>Today in one line</h3><p>"+esc(oneLine)+"</p></div>";
+  /* The Moon — the same calls the Sky view uses, so the two always agree. */
+  var ph = moonPhase(new Date());
+  var msign = moonSignNow();
+  var rs = skyMoonRiseSet(dateStr);
+  var fullName = (ph.name==="Full Moon") ? " — "+fullMoonName(dateStr) : "";
+  html += "<div class='panel'><h3>The Moon today</h3>"
+    + "<p><b>"+esc(ph.name+(msign?" in "+msign:"")+fullName)+"</b></p>"
+    + (msign ? "<p class='small'>"+esc(moonKeywords(msign))+"</p>" : "")
+    + "<p class='small'>"+ph.illum+"% lit · age "+ph.age.toFixed(1)+" days</p>"
+    + skyRow2(ICONS.crescent, "Moonrise", rs.rise!=null ? "about "+skyFmtMsLocal(rs.rise) : "—")
+    + skyRow2(ICONS.crescent, "Moonset", rs.set!=null ? "about "+skyFmtMsLocal(rs.set) : "—")
+    + "<p class='small'>Moonrise and moonset are about (±~10 min). Some days the Moon does not rise or set at all — then the line stays blank.</p></div>";
+  html += "<div class='panel'><h3>Transits to your chart</h3>";
+  if(transits.length){
+    html += transits.map(function(t){
+      var line = ASTRO_LINES[t.tp][t.asp].replace("{natal}", t.np);
+      var elem = astroElem(astroSign(row[ASTRO_GEO_IDX[t.tp]]));
+      return "<div class='place ce-"+elem+"'><div class='meta'>"+ASTRO_GLYPHS[t.tp]+" "+t.tp+" "+t.asp+" "+ASTRO_GLYPHS[t.np]+" "+t.np+" · "+astroOrbFmt(t.orb)+"° apart</div><p>"+esc(line)+"</p></div>";
+    }).join("");
+  } else {
+    html += "<p>No major transits to your chart today — the Moon carries the day.</p>";
+  }
+  html += "</div>";
+  html += "<div class='panel'><h3>Sun & Moon in your houses</h3>"
+    + "<p>Sun in "+sunSign+", your "+astroOrd(sunHouse)+" house.<br>Moon in "+moonSign+", your "+astroOrd(moonHouse)+" house.</p></div>";
+  var ings = astroIngresses(dateStr);
+  html += "<div class='panel'><h3>Changing sign today</h3>";
+  if(ings.length){
+    html += ings.map(function(g){
+      return "<p>The "+g.planet+" enters "+g.to+(g.time ? " at "+astroFmtTime(g.time) : "")+".</p>";
+    }).join("");
+  } else {
+    html += "<p>Nothing changes sign today.</p>";
+  }
+  html += "</div>";
+  html += "<p class='small'>Positions are from the planet table, at 12:00 local time. The table runs to 30 June 2027. Weather, not fate — take what fits, leave the rest.</p>";
+  return html;
+}
+VIEW_RENDER.astrotoday = function(el){
+  el.innerHTML = viewHead(viewMeta("astrotoday"), "How the sky is touching your chart today — transits to your Western chart, the Moon, and anything changing sign.")
+    + astroTodayHTML(todayStr());
 };
 /* ---- Numerology ---- */
 /* Meanings by number 1-9 (exact); master numbers 11/22/33 shown unreduced. */
